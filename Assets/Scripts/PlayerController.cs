@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     
     bool _jumping = false;
 
+    Vector2 _movementSinceLastPhysUpdate = new Vector2(0,0);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,11 +34,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        PlayerInput();
     }
     private void FixedUpdate()
     {
-        PlayerInput();
+        _mRB.position += _movementSinceLastPhysUpdate;
+        _movementSinceLastPhysUpdate = new Vector2(0, 0);
     }
 
     void PlayerInput()
@@ -45,9 +48,9 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         //Speed not dependant on framerate
-        Vector2 distanceMoved = new Vector2(horizontal, 0.0f)* Time.fixedDeltaTime * maxSpeed;
+        Vector2 distanceMoved = new Vector2(horizontal, 0.0f)* Time.deltaTime * maxSpeed;
 
-        transform.position = (_mRB.position + distanceMoved);
+        _movementSinceLastPhysUpdate += distanceMoved;
 
         if (Input.GetKeyUp("space")&& jumpingState < JumpingState.DoubleJump)
         {
@@ -70,7 +73,13 @@ public class PlayerController : MonoBehaviour
             Debug.Log("jumping state = "+ jumpingState);
         }
 
+        if(Input.GetKeyUp("s") && (jumpingState != JumpingState.Grounded && jumpingState != JumpingState.Stomping))
+        {
+            jumpingState = JumpingState.Stomping;
+            _mRB.AddForce(Vector2.down* jumpForce, ForceMode2D.Impulse);
 
+            Debug.Log("Jumping state = " + jumpingState);
+        }
 
     }
 
