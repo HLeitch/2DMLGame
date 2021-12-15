@@ -7,14 +7,14 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
 
     [SerializeField]
-    private Transform _levelStart;
+    public GameObject startFlag;
     [HideInInspector]
-    public Vector3 levelStart { get { return _levelStart.position; } }
+    public Vector3 levelStart { get { return startFlag.transform.position; } }
 
     [SerializeField]
-    private Transform _levelEnd;
+    public GameObject endFlag;
     [HideInInspector]
-    public Vector3 levelEnd { get { return _levelEnd.position; } }
+    public Vector3 levelEnd { get { return endFlag.transform.position; } }
 
     [SerializeField]
     public PlayerController player;

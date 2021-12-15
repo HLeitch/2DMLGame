@@ -9,7 +9,7 @@ public class LevelCreator : MonoBehaviour
 
     public Tilemap level;
 
-
+    public LevelManager levelManager;
     public List<Tile> singleJumpTiles;
     public List<Tile> stepUpTiles;
     public List<Tile> stepDownTiles;
@@ -17,6 +17,10 @@ public class LevelCreator : MonoBehaviour
     public Tile flatTile;
     private int[] _seed;
     private int heightOfNextTile;
+
+    public GameObject startFlag;
+    public GameObject endFlag;
+
 
     //Please enter a 7 digit seed
     public int seed = 1234567;
@@ -29,21 +33,36 @@ public class LevelCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SeedToArray();
+        _seed = SeedToArray();
+        
         level = GameObject.FindObjectOfType<Tilemap>();
-        level.SetTile(new Vector3Int(0, 0, 0), singleJumpTiles[0]);
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
+
+        startFlag = levelManager.startFlag;
+        endFlag = levelManager.endFlag;
+
+
         ProduceLevel();
+        PlaceStartAndEndFlag();
     }
 
-    private void SeedToArray()
+    //Convert Seed to an array
+    private int[] SeedToArray()
     {
+        //convert seed to string
         List<int> seedList = new List<int>();
         string digits = seed.ToString();
-        foreach (int d in digits)
+
+        Debug.Log(digits);
+        //each character is added to the seedList
+        foreach (char d in digits)
         {
-            seedList.Add(d);
+            int n = int.Parse(d.ToString());
+            seedList.Add(n);
+            Debug.Log(d);
         }
-        _seed = seedList.ToArray();
+        //seedlist is converted to an array for output.
+        return seedList.ToArray();
     }
 
     void ProduceLevel()
@@ -51,40 +70,62 @@ public class LevelCreator : MonoBehaviour
         int[] seedi = _seed;
         int[] seedj = _seed;
 
+        List<int> _tilesPlaced = new List<int>();
         int tileCounter = 0;
         foreach (int i in seedi)
         {
             foreach (int j in seedj)
             {
+
+                //start and end of levels are flat tiles
                 if (tileCounter < LengthOfLevel)
                 {
-                    //Creates a 1/2 digit int which is used to determine type and specific tile placed.
-                    int localTileSeed = (i * j) + (i + j);
-                    Tile tilePlaced =
-                    switch (localTileSeed % 3)
+                    if (tileCounter == 0 || tileCounter == LengthOfLevel - 1)
                     {
-                        case 0:
-                            GetSingleJumpTile(localTileSeed);
-                            break;
+                        PlaceFlatTile(tileCounter);
+                    }
+                    else
+                    {
+
+                        //Creates a 1/2 digit int which is used to determine type and specific tile placed.
+                        int currentTileSeed = (i * j) + (i + j);
+                        _tilesPlaced.Add(currentTileSeed);
+                        switch (currentTileSeed % 3)
+                        {
+                            case 0:
+                                PlaceSingleJumpTile(tileCounter, currentTileSeed);
+                                break;
 
                             //Step up or down tile. Step down can only be placed when nextTileHeight is above 0
-                        case 1:
-                            GetStepUpOrDown(localTileSeed);
-                            break;
-                        case 2:
-                            GetDashJumpTile(localTileSeed);
-                            break;
+                            case 1:
+                                float stepDownChance = (0.33333333333333f) * heightOfNextTile;
+                                float roll = ((float)seedi[6]) / 10f;
+                                if (roll < stepDownChance)
+                                {
+                                    PlaceStepDownTile(tileCounter, currentTileSeed);
+                                }
+                                else
+                                {
+                                    PlaceStepUpTile(tileCounter, currentTileSeed);
+                                }
 
 
-                        default:
-                            GetFlatTile(localTileSeed);
-                            break;
+                                break;
+                            case 2:
+                                PlaceDashJumpTile(tileCounter, currentTileSeed);
+                                break;
+
+
+                            default:
+                                PlaceFlatTile(tileCounter);
+                                break;
+                        }
                     }
                     tileCounter++;
                 }
             }
         }
-
+        Debug.Log("TILES = " + string.Join(",", _tilesPlaced));
 
     }
 
@@ -97,35 +138,55 @@ public class LevelCreator : MonoBehaviour
     void PlaceSingleJumpTile(int xpos, int tileSeed)
     {
         Tile tile = GetSingleJumpTile(tileSeed);
-
         _PlaceTile(tile, xpos, heightOfNextTile);
     }
     //Places a tile from the StepUpArray
-    void PlaceStepUpOrDownTile(int xpos, int tileSeed)
+    void PlaceStepUpTile(int xpos, int tileSeed)
     {
-        if
-
+        Tile tile = GetStepUpTile(tileSeed);
+        //return the current ypos and then increment up
+        int ypos = heightOfNextTile++;
+        _PlaceTile(tile, xpos, ypos);
     }
 
-
-
-
-    Tile GetStepUpOrDown(int tileSeed)
+    //Places a tile from the StepDownArray
+    void PlaceStepDownTile(int xpos, int tileSeed)
     {
-        return GetStepUpTile();
+        Tile tile = GetStepDownTile(tileSeed);
+        //decrement ypos and use this as the height for the tile
+        int ypos = --heightOfNextTile;
+        _PlaceTile(tile, xpos, ypos);
     }
 
+    //places a dash jump tile from DashJumpTileArray
+    void PlaceDashJumpTile(int xpos, int tileSeed)
+    {
+        Tile tile = GetDashJumpTile(tileSeed);
+        _PlaceTile(tile, xpos, heightOfNextTile);
+    }
+    //Places the flat tile
+    void PlaceFlatTile(int xpos)
+    {
+        _PlaceTile(GetFlatTile(), xpos, heightOfNextTile);
+    }
     Tile GetStepUpTile(int tileSeed)
-    { 
-        
-        return stepUpTiles[0];
+    {
+        int i = (tileSeed % stepUpTiles.Count);
+        return stepUpTiles[i];
+    }
+
+    Tile GetStepDownTile(int tileSeed)
+    {
+        int i = (tileSeed % stepDownTiles.Count);
+        return stepDownTiles[i];
     }
 
     Tile GetDashJumpTile(int tileSeed)
     {
-        return dashJumpTiles[0];
+        int i = (tileSeed % dashJumpTiles.Count);
+        return dashJumpTiles[i];
     }
-    Tile GetFlatTile(int tileSeed)
+    Tile GetFlatTile()
     {
         return flatTile;
     }
@@ -145,6 +206,7 @@ public class LevelCreator : MonoBehaviour
         float x_pos = level.localBounds.max.x;
         Vector3 flagPosition = level.GetCellCenterLocal(new Vector3Int(LengthOfLevel, 0, 0));
         flagPosition.x = x_pos;
+        endFlag.transform.position = flagPosition;
     }
 
     private void PlaceStartFlag()
@@ -152,6 +214,8 @@ public class LevelCreator : MonoBehaviour
         float x_pos = level.localBounds.min.x;
         Vector3 flagPosition = level.GetCellCenterLocal(new Vector3Int(0, 0, 0));
         flagPosition.x = x_pos;
+
+        startFlag.transform.position = flagPosition;
     }
 
 

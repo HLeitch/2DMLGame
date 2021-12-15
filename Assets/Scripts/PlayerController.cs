@@ -8,21 +8,20 @@ public enum JumpingState
     SingleJump = 1,
     DoubleJump = 2,
     Stomping = 3,
+    Dash = 4,
     Falling = 9
 }
 
 public class PlayerController : MonoBehaviour
 {
     //speed in units/second
-    public float maxSpeed = 2;
-    Rigidbody2D _mRB;
-    public float jumpForce = 8;
+    public float maxSpeed = 2f;
+    private Rigidbody2D _mRB;
+    public float jumpForce = 8f;
+    public float dashForce = 4f;
     
     JumpingState jumpingState = JumpingState.Grounded;
     
-    
-    bool _jumping = false;
-
     Vector2 _movementSinceLastPhysUpdate = new Vector2(0,0);
 
     // Start is called before the first frame update
@@ -39,6 +38,9 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         _mRB.position += _movementSinceLastPhysUpdate;
+
+        _mRB.velocity.Set(Mathf.Min(_mRB.velocity.x, maxSpeed),_mRB.velocity.y);
+
         _movementSinceLastPhysUpdate = new Vector2(0, 0);
     }
 
@@ -47,8 +49,12 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
+        Vector2 movement = new Vector2(horizontal, vertical);
+
+
+
         //Speed not dependant on framerate
-        Vector2 distanceMoved = new Vector2(horizontal, 0.0f)* Time.deltaTime * maxSpeed;
+        Vector2 distanceMoved = movement* Time.deltaTime * maxSpeed;
 
         _movementSinceLastPhysUpdate += distanceMoved;
 
@@ -76,9 +82,16 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyUp("s") && (jumpingState != JumpingState.Grounded && jumpingState != JumpingState.Stomping))
         {
             jumpingState = JumpingState.Stomping;
-            _mRB.AddForce(Vector2.down* jumpForce, ForceMode2D.Impulse);
+            _mRB.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse);
 
             Debug.Log("Jumping state = " + jumpingState);
+        }
+        if(Input.GetKeyUp("left shift") && (jumpingState != JumpingState.Grounded)&&(jumpingState != JumpingState.Stomping))
+        {
+            jumpingState = JumpingState.Dash;
+            _mRB.AddForce(movement * dashForce, ForceMode2D.Impulse);
+
+            Debug.Log("Jumping State = " + jumpingState);
         }
 
     }
