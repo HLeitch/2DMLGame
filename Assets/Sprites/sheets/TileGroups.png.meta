@@ -56,6 +56,21 @@ TextureImporter:
   - first:
       213: -8350074912415536050
     second: TileGroups_17
+  - first:
+      213: -7997671348030057784
+    second: TileGroups_18
+  - first:
+      213: 3305941921476934621
+    second: TileGroups_19
+  - first:
+      213: -7185534302938960356
+    second: TileGroups_20
+  - first:
+      213: 3855355017489722862
+    second: TileGroups_21
+  - first:
+      213: 4434010866886430512
+    second: TileGroups_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -717,6 +732,191 @@ TextureImporter:
       bones: []
       spriteID: e4c22959b139e1c80800000000000000
       internalID: -8350074912415536050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileGroups_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 30, y: 48}
+        - {x: 30, y: 34}
+        - {x: 16, y: 34}
+        - {x: 14, y: 32}
+        - {x: 14, y: 18}
+        - {x: 0, y: 18}
+        - {x: -2, y: 16}
+        - {x: -2, y: 2}
+        - {x: -16, y: 2}
+        - {x: -18, y: 0}
+        - {x: -18, y: -14}
+        - {x: -32, y: -14}
+        - {x: -34, y: -16}
+        - {x: -34, y: -30}
+        - {x: -48, y: -30}
+        - {x: -48, y: -48}
+        - {x: 48, y: -48}
+        - {x: 48, y: 48}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 8c2595e4840920190800000000000000
+      internalID: -7997671348030057784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileGroups_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 34, y: -16}
+        - {x: 32, y: -14}
+        - {x: 18, y: -14}
+        - {x: 18, y: 0}
+        - {x: 16, y: 2}
+        - {x: 2, y: 2}
+        - {x: 2, y: 16}
+        - {x: 0, y: 18}
+        - {x: -14, y: 18}
+        - {x: -14, y: 32}
+        - {x: -16, y: 34}
+        - {x: -30, y: 34}
+        - {x: -30, y: 48}
+        - {x: -48, y: 48}
+        - {x: -48, y: -48}
+        - {x: 48, y: -48}
+        - {x: 48, y: -30}
+        - {x: 34, y: -30}
+      tessellationDetail: 1
+      bones: []
+      spriteID: ddb74b579a011ed20800000000000000
+      internalID: 3305941921476934621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileGroups_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 34, y: -16}
+        - {x: 32, y: -14}
+        - {x: 18, y: -14}
+        - {x: 18, y: 0}
+        - {x: 16, y: 2}
+        - {x: -16, y: 2}
+        - {x: -18, y: 0}
+        - {x: -18, y: -30}
+        - {x: -48, y: -30}
+        - {x: -48, y: -48}
+        - {x: 48, y: -48}
+        - {x: 48, y: -30}
+        - {x: 34, y: -30}
+      tessellationDetail: 1
+      bones: []
+      spriteID: c1e60ff3f9ad74c90800000000000000
+      internalID: -7185534302938960356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileGroups_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 18, y: 0}
+        - {x: 16, y: 2}
+        - {x: 0, y: 2}
+        - {x: -2, y: 0}
+        - {x: -2, y: -14}
+        - {x: -32, y: -14}
+        - {x: -34, y: -16}
+        - {x: -34, y: -30}
+        - {x: -48, y: -30}
+        - {x: -48, y: -48}
+        - {x: 48, y: -48}
+        - {x: 48, y: -30}
+        - {x: 18, y: -30}
+      - - {x: -48, y: 48}
+        - {x: -48, y: 14}
+        - {x: 48, y: 14}
+        - {x: 48, y: 48}
+      tessellationDetail: 1
+      bones: []
+      spriteID: eedae7c36f8f08530800000000000000
+      internalID: 3855355017489722862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileGroups_22
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 18, y: 0}
+        - {x: 16, y: 2}
+        - {x: -16, y: 2}
+        - {x: -18, y: 0}
+        - {x: -18, y: -30}
+        - {x: -48, y: -30}
+        - {x: -48, y: -48}
+        - {x: 48, y: -48}
+        - {x: 48, y: -30}
+        - {x: 18, y: -30}
+      - - {x: -48, y: 48}
+        - {x: -48, y: 14}
+        - {x: 48, y: 14}
+        - {x: 48, y: 48}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 03fccfa1465c88d30800000000000000
+      internalID: 4434010866886430512
       vertices: []
       indices: 
       edges: []
