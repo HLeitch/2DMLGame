@@ -4,17 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+
+
 public class LevelCreator : MonoBehaviour
 {
 
     public Tilemap level;
+    public List<TileData> tileDatas = new List<TileData>();
+    public TileManager tileManager;
 
     public LevelManager levelManager;
-    public List<Tile> singleJumpTiles;
+/*    public List<Tile> singleJumpTiles;
     public List<Tile> stepUpTiles;
     public List<Tile> stepDownTiles;
     public List<Tile> dashJumpTiles;
-    public Tile flatTile;
+    public Tile flatTile;*/
     private int[] _seed;
     private int heightOfNextTile;
 
@@ -44,6 +48,12 @@ public class LevelCreator : MonoBehaviour
 
         ProduceLevel();
         PlaceStartAndEndFlag();
+        string numberOfJumps = "";
+        foreach(TileData t in tileDatas)
+        {
+            numberOfJumps += $"{t.numberOfJumps}, ";
+        }
+        Debug.Log($"Number Of Jumps In each tile: {numberOfJumps}");
     }
 
     //Convert Seed to an array
@@ -89,8 +99,9 @@ public class LevelCreator : MonoBehaviour
 
                         //Creates a 1/2 digit int which is used to determine type and specific tile placed.
                         int currentTileSeed = (i * j) + (i + j);
+                        int typeSeed = i + j;
                         _tilesPlaced.Add(currentTileSeed);
-                        switch (currentTileSeed % 3)
+                        switch (typeSeed % 3)
                         {
                             case 0:
                                 PlaceSingleJumpTile(tileCounter, currentTileSeed);
@@ -135,41 +146,53 @@ public class LevelCreator : MonoBehaviour
     }
 
     // Places a tile from the single Jump Array
-    void PlaceSingleJumpTile(int xpos, int tileSeed)
+    private void PlaceSingleJumpTile(int xPos, int tileSeed)
     {
-        Tile tile = GetSingleJumpTile(tileSeed);
-        _PlaceTile(tile, xpos, heightOfNextTile);
+        TileData tileData = tileManager.GetSingleJumpTile(tileSeed, xPos);
+        tileDatas.Add(tileData);
+
+        Tile tileToPlace = tileData.tile;
+        _PlaceTile(tileToPlace, xPos, heightOfNextTile);
     }
     //Places a tile from the StepUpArray
-    void PlaceStepUpTile(int xpos, int tileSeed)
+    void PlaceStepUpTile(int xPos, int tileSeed)
     {
-        Tile tile = GetStepUpTile(tileSeed);
-        //return the current ypos and then increment up
+        TileData tileData = tileManager.GetStepUpTile(tileSeed, xPos);
+        tileDatas.Add(tileData);
+
+        Tile tileToPlace = tileData.tile;
+        _PlaceTile(tileToPlace, xPos, heightOfNextTile);
         int ypos = heightOfNextTile++;
-        _PlaceTile(tile, xpos, ypos);
     }
 
     //Places a tile from the StepDownArray
-    void PlaceStepDownTile(int xpos, int tileSeed)
+    void PlaceStepDownTile(int xPos, int tileSeed)
     {
-        Tile tile = GetStepDownTile(tileSeed);
-        //decrement ypos and use this as the height for the tile
+        TileData tileData = tileManager.GetStepDownTile(tileSeed, xPos);
+        tileDatas.Add(tileData);
         int ypos = --heightOfNextTile;
-        _PlaceTile(tile, xpos, ypos);
+        Tile tileToPlace = tileData.tile;
+        _PlaceTile(tileToPlace, xPos, heightOfNextTile);
     }
 
     //places a dash jump tile from DashJumpTileArray
-    void PlaceDashJumpTile(int xpos, int tileSeed)
+    void PlaceDashJumpTile(int xPos, int tileSeed)
     {
-        Tile tile = GetDashJumpTile(tileSeed);
-        _PlaceTile(tile, xpos, heightOfNextTile);
+        TileData tileData = tileManager.GetDashJumpTile(tileSeed, xPos);
+        tileDatas.Add(tileData);
+
+        Tile tileToPlace = tileData.tile;
+        _PlaceTile(tileToPlace, xPos, heightOfNextTile);
     }
     //Places the flat tile
     void PlaceFlatTile(int xpos)
     {
-        _PlaceTile(GetFlatTile(), xpos, heightOfNextTile);
+        TileData td = tileManager.GetFlatTileData(xpos);
+        tileDatas.Add(td);
+        Tile flat = td.tile;
+        _PlaceTile(flat, xpos, heightOfNextTile);
     }
-    Tile GetStepUpTile(int tileSeed)
+/*    Tile GetStepUpTile(int tileSeed)
     {
         int i = (tileSeed % stepUpTiles.Count);
         return stepUpTiles[i];
@@ -194,7 +217,7 @@ public class LevelCreator : MonoBehaviour
     {
         return singleJumpTiles[0];
     }
-
+*/
     void PlaceStartAndEndFlag()
     {
         PlaceStartFlag();
