@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraDriver : MonoBehaviour
 {
-    private LevelManager levelManager;
+    public LevelManager levelManager;
     private PlayerController player;
 
     private float zPosCamera;
@@ -19,9 +19,9 @@ public class CameraDriver : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        levelManager = GameObject.FindObjectOfType<LevelManager>();
+        //levelManager = GameObject.FindObjectOfType<LevelManager>();
         player = levelManager.player;
         zPosCamera = this.transform.position.z;
     }

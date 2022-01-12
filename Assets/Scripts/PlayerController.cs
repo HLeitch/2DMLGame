@@ -2,16 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum JumpingState
-{
-    Grounded = 0,
-    SingleJump = 1,
-    DoubleJump = 2,
-    Stomping = 3,
-    Dash = 4,
-    Falling = 9
-}
-
 public class PlayerController : MonoBehaviour
 {
     //speed in units/second
@@ -20,12 +10,13 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 8f;
     public float dashForce = 4f;
     
-    JumpingState jumpingState = JumpingState.Grounded;
+    public JumpingState jumpingState = JumpingState.Grounded;
     
     Vector2 _movementSinceLastPhysUpdate = new Vector2(0,0);
+    bool jumpinPhysicsUpdate = false;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _mRB = GetComponent<Rigidbody2D>();
     }
@@ -33,7 +24,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerInput();
+        //PlayerInput();
     }
     private void FixedUpdate()
     {
@@ -42,58 +33,114 @@ public class PlayerController : MonoBehaviour
         _mRB.velocity.Set(Mathf.Min(_mRB.velocity.x, maxSpeed),_mRB.velocity.y);
 
         _movementSinceLastPhysUpdate = new Vector2(0, 0);
+
+        if(jumpinPhysicsUpdate)
+        {
+            PhysicsUpdateJump();
+            jumpinPhysicsUpdate = false;
+        }
     }
 
-    void PlayerInput()
+
+    /// <summary>
+    /// Human Player input
+    /// </summary>
+    public void PlayerInput()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
+        Vector2 distanceMoved = Instruct_Movement(horizontal, vertical);
+
+        _movementSinceLastPhysUpdate += distanceMoved;
+        if (Input.GetKeyUp("space"))
+        {
+            Instruct_Jump();
+        }
+        if (Input.GetKeyUp("s"))
+        {
+            Instruct_Stomp();
+        }
+        if (Input.GetKeyUp("left shift") && (jumpingState != JumpingState.Grounded) && (jumpingState != JumpingState.Stomping))
+        {
+            Movement_Dash();
+        }
+
+    }
+
+    public Vector2 Instruct_Movement(float horizontal, float vertical)
+    {
+        Vector2 distanceMoved;
+        Movement_Horizontal(horizontal, vertical, out distanceMoved);
+        return distanceMoved;
+    }
+
+    private void Movement_Horizontal(float horizontal, float vertical, out Vector2 distanceMoved)
+    {
         Vector2 movement = new Vector2(horizontal, vertical);
 
 
 
         //Speed not dependant on framerate
-        Vector2 distanceMoved = movement* Time.deltaTime * maxSpeed;
+        distanceMoved = movement * Time.deltaTime * maxSpeed;
+    }
 
-        _movementSinceLastPhysUpdate += distanceMoved;
-
-        if (Input.GetKeyUp("space")&& jumpingState < JumpingState.DoubleJump)
+    public  void Instruct_Stomp()
+    {
+        if ((jumpingState != JumpingState.Grounded && jumpingState != JumpingState.Stomping))
         {
-            float extraForce = 0;
-            //when Falling add more force
-            if(_mRB.velocity.y < 0)
-            {
-                float currentVel = _mRB.velocity.y;
+            Movement_Stomp();
+        }
+    }
 
-                //ForceMode.Impulse handles physics of object
-                extraForce = -currentVel;
-                Debug.Log("Extra force = " + extraForce);
-                //F=ma 
-                extraForce *= _mRB.mass;
-            }
+    public void Instruct_Jump()
+    {
+        jumpinPhysicsUpdate = true;
+    }
 
+    private void PhysicsUpdateJump()
+    {
+        if (jumpingState < JumpingState.DoubleJump)
+        {
+            Movement_Jump();
+        }
+    }
 
-            _mRB.AddForce(Vector2.up * (jumpForce+extraForce),ForceMode2D.Impulse);
-            jumpingState++;
-            Debug.Log("jumping state = "+ jumpingState);
+    private void Movement_Jump()
+    {
+        float extraForce = 0;
+        //when Falling add more force
+        if (_mRB.velocity.y < 0)
+        {
+            float currentVel = _mRB.velocity.y;
+
+            //ForceMode.Impulse handles physics of object
+            extraForce = -currentVel;
+            Debug.Log("Extra force = " + extraForce);
+            //F=ma 
+            extraForce *= _mRB.mass;
         }
 
-        if(Input.GetKeyUp("s") && (jumpingState != JumpingState.Grounded && jumpingState != JumpingState.Stomping))
-        {
-            jumpingState = JumpingState.Stomping;
-            _mRB.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse);
 
-            Debug.Log("Jumping state = " + jumpingState);
-        }
-        if(Input.GetKeyUp("left shift") && (jumpingState != JumpingState.Grounded)&&(jumpingState != JumpingState.Stomping))
-        {
-            jumpingState = JumpingState.Dash;
-            _mRB.AddForce(movement * dashForce, ForceMode2D.Impulse);
+        _mRB.AddForce(Vector2.up * (jumpForce + extraForce), ForceMode2D.Impulse);
+        jumpingState++;
+        Debug.Log("jumping state = " + jumpingState);
+    }
 
-            Debug.Log("Jumping State = " + jumpingState);
-        }
+    private void Movement_Dash()
+    {
+        jumpingState = JumpingState.Dash;
+        _mRB.AddForce(_mRB.velocity * dashForce, ForceMode2D.Impulse);
 
+        Debug.Log("Jumping State = " + jumpingState);
+    }
+
+    private void Movement_Stomp()
+    {
+        jumpingState = JumpingState.Stomping;
+        _mRB.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse);
+
+        Debug.Log("Jumping state = " + jumpingState);
     }
 
     public void Landed()
