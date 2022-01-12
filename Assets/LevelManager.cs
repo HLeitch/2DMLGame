@@ -9,12 +9,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     public GameObject startFlag;
     [HideInInspector]
-    public Vector3 levelStart { get { return startFlag.transform.position; } }
+    public Vector3 levelStart { get { return startFlag.transform.localPosition; } }
 
     [SerializeField]
     public GameObject endFlag;
     [HideInInspector]
-    public Vector3 levelEnd { get { return endFlag.transform.position; } }
+    public Vector3 levelEnd { get { return endFlag.transform.localPosition; } }
 
     [SerializeField]
     public PlayerController player;
@@ -33,7 +33,7 @@ public class LevelManager : MonoBehaviour
                 player = Instantiate(playerPrefab, levelStart, Quaternion.identity).GetComponent<PlayerController>();
             }
         }
-        player.transform.position = levelStart;
+        player.transform.localPosition = levelStart;
     }
 
     // Update is called once per frame

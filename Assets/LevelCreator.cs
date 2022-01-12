@@ -37,10 +37,17 @@ public class LevelCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       // GenerateLevel();
+    }
+
+    public void GenerateLevel()
+    {
         _seed = SeedToArray();
-        
+
         level = GameObject.FindObjectOfType<Tilemap>();
         levelManager = GameObject.FindObjectOfType<LevelManager>();
+
+        level.ClearAllTiles();
 
         startFlag = levelManager.startFlag;
         endFlag = levelManager.endFlag;
@@ -49,7 +56,7 @@ public class LevelCreator : MonoBehaviour
         ProduceLevel();
         PlaceStartAndEndFlag();
         string numberOfJumps = "";
-        foreach(TileData t in tileDatas)
+        foreach (TileData t in tileDatas)
         {
             numberOfJumps += $"{t.numberOfJumps}, ";
         }
@@ -69,7 +76,6 @@ public class LevelCreator : MonoBehaviour
         {
             int n = int.Parse(d.ToString());
             seedList.Add(n);
-            Debug.Log(d);
         }
         //seedlist is converted to an array for output.
         return seedList.ToArray();
@@ -229,16 +235,16 @@ public class LevelCreator : MonoBehaviour
         float x_pos = level.localBounds.max.x;
         Vector3 flagPosition = level.GetCellCenterLocal(new Vector3Int(LengthOfLevel, 0, 0));
         flagPosition.x = x_pos;
-        endFlag.transform.position = flagPosition;
+        endFlag.transform.localPosition = flagPosition;
     }
 
     private void PlaceStartFlag()
     {
         float x_pos = level.localBounds.min.x;
         Vector3 flagPosition = level.GetCellCenterLocal(new Vector3Int(0, 0, 0));
-        flagPosition.x = x_pos;
+        //flagPosition.x = x_pos;
 
-        startFlag.transform.position = flagPosition;
+        startFlag.transform.localPosition = flagPosition;
     }
 
 
