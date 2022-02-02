@@ -9,7 +9,7 @@ using UnityEngine.Tilemaps;
 public class LevelCreator : MonoBehaviour
 {
 
-    public Tilemap level;
+    public Tilemap levelTilemap;
     public List<TileData> tileDatas = new List<TileData>();
     public TileManager tileManager;
 
@@ -44,10 +44,10 @@ public class LevelCreator : MonoBehaviour
     {
         _seed = SeedToArray();
 
-        level = GameObject.FindObjectOfType<Tilemap>();
-        levelManager = GameObject.FindObjectOfType<LevelManager>();
+        levelTilemap = GameObject.FindObjectOfType<Tilemap>();
+        levelManager = this.gameObject.GetComponent<LevelManager>();
 
-        level.ClearAllTiles();
+        levelTilemap.ClearAllTiles();
 
         startFlag = levelManager.startFlag;
         endFlag = levelManager.endFlag;
@@ -60,6 +60,7 @@ public class LevelCreator : MonoBehaviour
         {
             numberOfJumps += $"{t.numberOfJumps}, ";
         }
+        Debug.Log("Level Generated");
         Debug.Log($"Number Of Jumps In each tile: {numberOfJumps}");
     }
 
@@ -148,7 +149,7 @@ public class LevelCreator : MonoBehaviour
 
     void _PlaceTile(Tile toPlace, int posx, int posy)
     {
-        level.SetTile(new Vector3Int(posx, posy, 0), toPlace);
+        levelTilemap.SetTile(new Vector3Int(posx, posy, 0), toPlace);
     }
 
     // Places a tile from the single Jump Array
@@ -232,16 +233,16 @@ public class LevelCreator : MonoBehaviour
 
     private void PlaceEndFlag()
     {
-        float x_pos = level.localBounds.max.x;
-        Vector3 flagPosition = level.GetCellCenterLocal(new Vector3Int(LengthOfLevel, 0, 0));
+        float x_pos = levelTilemap.localBounds.max.x;
+        Vector3 flagPosition = levelTilemap.GetCellCenterLocal(new Vector3Int(LengthOfLevel-1, 0, 0));
         flagPosition.x = x_pos;
         endFlag.transform.localPosition = flagPosition;
     }
 
     private void PlaceStartFlag()
     {
-        float x_pos = level.localBounds.min.x;
-        Vector3 flagPosition = level.GetCellCenterLocal(new Vector3Int(0, 0, 0));
+        float x_pos = levelTilemap.localBounds.min.x;
+        Vector3 flagPosition = levelTilemap.GetCellCenterLocal(new Vector3Int(0, 0, 0));
         //flagPosition.x = x_pos;
 
         startFlag.transform.localPosition = flagPosition;

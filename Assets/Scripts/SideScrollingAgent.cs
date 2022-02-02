@@ -45,22 +45,25 @@ public class SideScrollingAgent : Agent
         this.rigidbody2D.transform.localPosition = levelCreator.startFlag.transform.localPosition;
         this.rigidbody2D.velocity = Vector3.zero;
         
-        base.OnEpisodeBegin();
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
         sensor.AddObservation(this.transform.localPosition);
-        sensor.AddObservation(this.rigidbody2D.velocity);
+        sensor.AddObservation(this.rigidbody2D.velocity.x);
+        sensor.AddObservation(this.rigidbody2D.velocity.y);
+        sensor.AddObservation((int) jumpingState);
+
     }
 
   
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-       // Debug.Log($"normalized distance to goal = {normalisedDistanceToGoal()}");
-
-       
+        // Debug.Log($"normalized distance to goal = {normalisedDistanceToGoal()}");
+        //Debug.Log($"Continuous buffers [0] = {actions.ContinuousActions.Array[0]}");
+        string outputActions = actions.ContinuousActions.Array.ToString();
+        Debug.Log($"Continuous Buffer = {outputActions}");
 
         if(normalisedDistanceToGoal() < 0.05f)
         {
@@ -74,16 +77,22 @@ public class SideScrollingAgent : Agent
 
         }
         //add a small penalty for not finishing the level
-        //gives a time limit of 100 seconds (hard coded)
+        //gives a time limit of 100 seconds (hard coded) 
         else
         {
             AddReward(-0.01f * Time.deltaTime);
 
-            int movementControl = actions.DiscreteActions[0];
+            //AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
 
-            int jumpControl = actions.DiscreteActions[1];
+            float movementControl = actions.ContinuousActions[0];
 
-            playerController.Instruct_Movement(movementControl,0);
+            float jumpControl = actions.ContinuousActions[1];
+
+            float StompControl = actions.ContinuousActions[2];
+
+            float dashControl = actions.ContinuousActions[3];
+
+            playerController.aiCallMovement(movementControl,0);
 
             if (jumpControl > 0.9)
             {
