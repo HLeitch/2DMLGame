@@ -61,12 +61,20 @@ public class PlayerController : MonoBehaviour
         {
             Instruct_Stomp();
         }
-        if (Input.GetKeyUp("left shift") && (jumpingState != JumpingState.Grounded) && (jumpingState != JumpingState.Stomping))
+        if (Input.GetKeyUp("left shift"))
         {
-            Movement_Dash();
+            Instruct_Dash();
         }
 
     }
+
+    public void aiCallMovement(float horizontal, float vertical)
+    {
+
+        _movementSinceLastPhysUpdate += Instruct_Movement(horizontal, vertical);
+
+    }
+
 
     public Vector2 Instruct_Movement(float horizontal, float vertical)
     {
@@ -78,11 +86,11 @@ public class PlayerController : MonoBehaviour
     private void Movement_Horizontal(float horizontal, float vertical, out Vector2 distanceMoved)
     {
         Vector2 movement = new Vector2(horizontal, vertical);
-
-
+        Debug.Log($"Movement executed. {movement}");
 
         //Speed not dependant on framerate
         distanceMoved = movement * Time.deltaTime * maxSpeed;
+
     }
 
     public  void Instruct_Stomp()
@@ -90,6 +98,14 @@ public class PlayerController : MonoBehaviour
         if ((jumpingState != JumpingState.Grounded && jumpingState != JumpingState.Stomping))
         {
             Movement_Stomp();
+        }
+    }
+
+    public void Instruct_Dash()
+    {
+        if ((jumpingState != JumpingState.Grounded) && (jumpingState != JumpingState.Stomping))
+        {
+            Movement_Dash();
         }
     }
 

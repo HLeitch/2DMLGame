@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(LevelCreator))]
 public class LevelManager : MonoBehaviour
 {
     // Start is called before the first frame update
