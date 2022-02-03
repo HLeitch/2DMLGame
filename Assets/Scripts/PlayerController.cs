@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
     private void Movement_Horizontal(float horizontal, float vertical, out Vector2 distanceMoved)
     {
         Vector2 movement = new Vector2(horizontal, vertical);
-        Debug.Log($"Movement executed. {movement}");
+        //Debug.Log($"Movement executed. {movement}");
 
         //Speed not dependant on framerate
         distanceMoved = movement * Time.deltaTime * maxSpeed;
@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour
 
             //ForceMode.Impulse handles physics of object
             extraForce = -currentVel;
-            Debug.Log("Extra force = " + extraForce);
+            //Debug.Log("Extra force = " + extraForce);
             //F=ma 
             extraForce *= _mRB.mass;
         }
@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour
         jumpingState = JumpingState.Dash;
         _mRB.AddForce(_mRB.velocity * dashForce, ForceMode2D.Impulse);
 
-        Debug.Log("Jumping State = " + jumpingState);
+        //Debug.Log("Jumping State = " + jumpingState);
     }
 
     private void Movement_Stomp()
@@ -156,12 +156,12 @@ public class PlayerController : MonoBehaviour
         jumpingState = JumpingState.Stomping;
         _mRB.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse);
 
-        Debug.Log("Jumping state = " + jumpingState);
+       // Debug.Log("Jumping state = " + jumpingState);
     }
 
     public void Landed()
     {
         jumpingState = JumpingState.Grounded;
-        Debug.Log("Landed called");
+        //Debug.Log("Landed called");
     }
 }

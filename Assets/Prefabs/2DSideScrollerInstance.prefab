@@ -382,19 +382,19 @@ CompositeCollider2D:
   - m_Collider: {fileID: 4276228814411308600}
     m_ColliderPaths:
     - - X: 3005506
-        Y: -5547919
+        Y: -5547922
       - X: 3005506
-        Y: 2220413
+        Y: 2220410
       - X: -2276877
-        Y: 2220120
+        Y: 2220117
       - X: -2276584
-        Y: -5547919
+        Y: -5547922
   m_CompositePaths:
     m_Paths:
-    - - {x: 0.3005213, y: -0.5547919}
-      - {x: 0.3005213, y: 0.22204131}
-      - {x: -0.2276877, y: 0.2219827}
-      - {x: -0.2276291, y: -0.5547919}
+    - - {x: 0.3005213, y: -0.5547922}
+      - {x: 0.3005213, y: 0.222041}
+      - {x: -0.2276877, y: 0.2219824}
+      - {x: -0.2276291, y: -0.5547922}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!114 &4276228814190985103
@@ -455,7 +455,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 5000
   instanceBase: {fileID: 4276228814471500585}
 --- !u!114 &4276228814190985098
 MonoBehaviour:

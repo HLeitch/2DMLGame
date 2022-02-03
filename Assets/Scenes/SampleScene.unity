@@ -931,38 +931,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[0].y
-      value: -0.5547922
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[1].y
-      value: 0.222041
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[2].y
-      value: 0.2219824
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[3].y
-      value: -0.5547922
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: -5547922
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 2220410
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 2220117
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: -5547922
-      objectReference: {fileID: 0}
     - target: {fileID: 4276228814471500566, guid: c0210be5528597543840bb86a36264b6, type: 3}
       propertyPath: m_RootOrder
       value: 0

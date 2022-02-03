@@ -63,7 +63,7 @@ public class SideScrollingAgent : Agent
         // Debug.Log($"normalized distance to goal = {normalisedDistanceToGoal()}");
         //Debug.Log($"Continuous buffers [0] = {actions.ContinuousActions.Array[0]}");
         string outputActions = actions.ContinuousActions.Array.ToString();
-        Debug.Log($"Continuous Buffer = {outputActions}");
+        //Debug.Log($"Continuous Buffer = {outputActions}");
 
         if(normalisedDistanceToGoal() < 0.05f)
         {
@@ -76,13 +76,14 @@ public class SideScrollingAgent : Agent
             EndEpisode();
 
         }
-        //add a small penalty for not finishing the level
-        //gives a time limit of 100 seconds (hard coded) 
+        
         else
         {
-            AddReward(-0.01f * Time.deltaTime);
+            //add a small penalty for not finishing the level
+            //gives a time limit of 100 seconds (hard coded) 
+            //AddReward(-0.01f * Time.deltaTime);
 
-            //AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
+            AddReward(0.05f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
 
             float movementControl = actions.ContinuousActions[0];
 
