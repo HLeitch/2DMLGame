@@ -43,10 +43,9 @@ public class LevelCreator : MonoBehaviour
     public void GenerateLevel()
     {
         _seed = SeedToArray();
-
-        levelTilemap = GameObject.FindObjectOfType<Tilemap>();
         levelManager = this.gameObject.GetComponent<LevelManager>();
-
+        //tileManager = this.gameObject.GetComponent<TileManager>();
+        Debug.Log($"MY TILEMAP IS = {levelTilemap.gameObject.GetInstanceID()}");
         levelTilemap.ClearAllTiles();
 
         startFlag = levelManager.startFlag;
