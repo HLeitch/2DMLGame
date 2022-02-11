@@ -85,7 +85,7 @@ public class LevelCreator : MonoBehaviour
     {
         int[] seedi = _seed;
         int[] seedj = _seed;
-
+        tileDatas.Clear();
         List<int> _tilesPlaced = new List<int>();
         int tileCounter = 0;
         foreach (int i in seedi)
@@ -232,10 +232,8 @@ public class LevelCreator : MonoBehaviour
 
     private void PlaceEndFlag()
     {
-        float x_pos = levelTilemap.localBounds.max.x;
-        Vector3 flagPosition = levelTilemap.GetCellCenterLocal(new Vector3Int(LengthOfLevel-1, 0, 0));
-        flagPosition.x = x_pos;
-        endFlag.transform.localPosition = flagPosition;
+        Vector3 flagPosition = levelTilemap.GetCellCenterWorld(new Vector3Int(LengthOfLevel-1, 0, 0));
+        endFlag.transform.position = flagPosition;
     }
 
     private void PlaceStartFlag()
