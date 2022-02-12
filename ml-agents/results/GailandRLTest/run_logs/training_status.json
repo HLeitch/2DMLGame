@@ -1,0 +1,56 @@
+{
+    "Pyramids": {
+        "checkpoints": [
+            {
+                "steps": 499920,
+                "file_path": "results\\GailandRLTest\\Pyramids\\Pyramids-499920.onnx",
+                "reward": 1.813666636745135,
+                "creation_time": 1641393334.6944318,
+                "auxillary_file_paths": [
+                    "results\\GailandRLTest\\Pyramids\\Pyramids-499920.pt"
+                ]
+            },
+            {
+                "steps": 999904,
+                "file_path": "results\\GailandRLTest\\Pyramids\\Pyramids-999904.onnx",
+                "reward": null,
+                "creation_time": 1641394968.149479,
+                "auxillary_file_paths": [
+                    "results\\GailandRLTest\\Pyramids\\Pyramids-999904.pt"
+                ]
+            },
+            {
+                "steps": 1499962,
+                "file_path": "results\\GailandRLTest\\Pyramids\\Pyramids-1499962.onnx",
+                "reward": 1.8244999796152115,
+                "creation_time": 1641396170.4770904,
+                "auxillary_file_paths": [
+                    "results\\GailandRLTest\\Pyramids\\Pyramids-1499962.pt"
+                ]
+            },
+            {
+                "steps": 1526023,
+                "file_path": "results\\GailandRLTest\\Pyramids\\Pyramids-1526023.onnx",
+                "reward": 1.7902857065200806,
+                "creation_time": 1641396232.8589194,
+                "auxillary_file_paths": [
+                    "results\\GailandRLTest\\Pyramids\\Pyramids-1526023.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1526023,
+            "file_path": "results\\GailandRLTest\\Pyramids.onnx",
+            "reward": 1.7902857065200806,
+            "creation_time": 1641396232.8589194,
+            "auxillary_file_paths": [
+                "results\\GailandRLTest\\Pyramids\\Pyramids-1526023.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
