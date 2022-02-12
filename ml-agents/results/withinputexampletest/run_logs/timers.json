@@ -1,0 +1,89 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1641332144",
+        "python_version": "3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\harri\\python-envs\\sample-env\\Scripts\\mlagents-learn config/imitation/PushBlock.yaml --run-id=withinputexampletest",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.4",
+        "end_time_seconds": "1641332153"
+    },
+    "total": 9.6932282,
+    "count": 1,
+    "self": 0.010147500000002196,
+    "children": {
+        "run_training.setup": {
+            "total": 0.13332729999999993,
+            "count": 1,
+            "self": 0.13332729999999993
+        },
+        "TrainerController.start_learning": {
+            "total": 9.549753399999998,
+            "count": 1,
+            "self": 0.0001536999999967037,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 9.5423199,
+                    "count": 1,
+                    "self": 7.368531300000001,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 2.1737886,
+                            "count": 1,
+                            "self": 6.20999999991767e-05,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 0.030115600000000242,
+                                    "count": 1,
+                                    "self": 0.028610699999999767,
+                                    "children": {
+                                        "read_file": {
+                                            "total": 0.0015049000000004753,
+                                            "count": 1,
+                                            "self": 0.0015049000000004753
+                                        }
+                                    }
+                                },
+                                "make_demo_buffer": {
+                                    "total": 2.1436109000000005,
+                                    "count": 1,
+                                    "self": 0.30010189999991965,
+                                    "children": {
+                                        "steps_from_proto": {
+                                            "total": 1.8435090000000809,
+                                            "count": 10734,
+                                            "self": 1.0598031000003303,
+                                            "children": {
+                                                "_process_rank_one_or_two_observation": {
+                                                    "total": 0.7837058999997506,
+                                                    "count": 42936,
+                                                    "self": 0.7837058999997506
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.007279800000000947,
+                    "count": 1,
+                    "self": 0.00024349999999984107,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.0070363000000011056,
+                            "count": 1,
+                            "self": 0.0070363000000011056
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

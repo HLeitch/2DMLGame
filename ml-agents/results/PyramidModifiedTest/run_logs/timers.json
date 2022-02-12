@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1641505610",
+        "python_version": "3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\harri\\python-envs\\sample-env\\Scripts\\mlagents-learn config\\imitation\\PyramidsEdited.yaml --env=PyramidsModifiedEnv --run-id=PyramidModifiedTest --num-envs=5 --force",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.4",
+        "end_time_seconds": "1641505627"
+    },
+    "total": 17.6064175,
+    "count": 1,
+    "self": 10.012693299999999,
+    "children": {
+        "run_training.setup": {
+            "total": 0.45548029999999984,
+            "count": 1,
+            "self": 0.45548029999999984
+        },
+        "TrainerController.start_learning": {
+            "total": 7.1382439,
+            "count": 1,
+            "self": 0.0003949999999983689,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.1378348,
+                    "count": 1,
+                    "self": 7.1378348
+                },
+                "trainer_threads": {
+                    "total": 1.1000000004202093e-06,
+                    "count": 1,
+                    "self": 1.1000000004202093e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 1.3000000000928935e-05,
+                    "count": 1,
+                    "self": 1.3000000000928935e-05
+                }
+            }
+        }
+    }
+}
