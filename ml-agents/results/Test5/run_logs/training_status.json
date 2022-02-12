@@ -1,0 +1,47 @@
+{
+    "SideScroller": {
+        "checkpoints": [
+            {
+                "steps": 499000,
+                "file_path": "results\\Test5\\SideScroller\\SideScroller-499000.onnx",
+                "reward": 0.5104704380035401,
+                "creation_time": 1644594999.509384,
+                "auxillary_file_paths": [
+                    "results\\Test5\\SideScroller\\SideScroller-499000.pt"
+                ]
+            },
+            {
+                "steps": 999000,
+                "file_path": "results\\Test5\\SideScroller\\SideScroller-999000.onnx",
+                "reward": 0.2986800827085972,
+                "creation_time": 1644596157.2172327,
+                "auxillary_file_paths": [
+                    "results\\Test5\\SideScroller\\SideScroller-999000.pt"
+                ]
+            },
+            {
+                "steps": 1360000,
+                "file_path": "results\\Test5\\SideScroller\\SideScroller-1360000.onnx",
+                "reward": null,
+                "creation_time": 1644596968.5730877,
+                "auxillary_file_paths": [
+                    "results\\Test5\\SideScroller\\SideScroller-1360000.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1360000,
+            "file_path": "results\\Test5\\SideScroller.onnx",
+            "reward": null,
+            "creation_time": 1644596968.5730877,
+            "auxillary_file_paths": [
+                "results\\Test5\\SideScroller\\SideScroller-1360000.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

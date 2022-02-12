@@ -2,7 +2,9 @@
 /models
 /summaries
 # Output Artifacts
-/results
+##Would like to transfer results between machines
+#/results
+
 # Output Builds
 /Builds
 

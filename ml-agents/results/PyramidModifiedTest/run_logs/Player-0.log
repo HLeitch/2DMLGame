@@ -1,0 +1,88 @@
+Mono path[0] = 'C:/Users/harri/OneDrive/Documents/Year 3/Project/UnityML/ml-agents/PyramidsModifiedEnv/UnityEnvironment_Data/Managed'
+Mono config path = 'C:/Users/harri/OneDrive/Documents/Year 3/Project/UnityML/ml-agents/PyramidsModifiedEnv/MonoBleedingEdge/etc'
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path C:/Users/harri/OneDrive/Documents/Year 3/Project/UnityML/ml-agents/PyramidsModifiedEnv/UnityEnvironment_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   30.0.14.9649
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+Forced to initialize FMOD to to the device driver's system output rate 48000, this may impact performance and/or give inconsistent experiences compared to selected sample rate 48000
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+FMOD failed to initialize the output device.: "Not enough memory or resources. " (43)
+Unable to initalize any audio device (even FMOD nosound device), please check your audio drivers and/or hardware for malfunction
+Begin MonoManager ReloadAssembly
+Failed loading assembly Managed/UnityEngine.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.AndroidJNIModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.AndroidJNIModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.AnimationModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.AnimationModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.AudioModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.AudioModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.CoreModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.CoreModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.CrashReportingModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.CrashReportingModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.DSPGraphModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.DSPGraphModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.IMGUIModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.IMGUIModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.ImageConversionModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.ImageConversionModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.InputModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.InputModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.InputLegacyModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.InputLegacyModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.LocalizationModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.LocalizationModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.ParticleSystemModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.ParticleSystemModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.PerformanceReportingModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.PerformanceReportingModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.PhysicsModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.PhysicsModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.Physics2DModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.Physics2DModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.ProfilerModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.ProfilerModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.ScreenCaptureModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.ScreenCaptureModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.SharedInternalsModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.SharedInternalsModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.SpriteMaskModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.SpriteMaskModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.SpriteShapeModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.SpriteShapeModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.TerrainModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.TerrainModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.TextCoreModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.TextCoreModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.TextRenderingModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.TextRenderingModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.UIElementsModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.UIElementsModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.UnityWebRequestWWWModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.UnityWebRequestWWWModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.VFXModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.VFXModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.WindModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.WindModule.dll" reason: Not enough space
+Failed loading assembly Managed/UnityEngine.XRModule.dll reason: Not enough space
+Loading assembly failed: "Managed/UnityEngine.XRModule.dll" reason: Not enough space
+Crash!!!
+  ERROR: Error while initializing dbghelp.dll, GetLastError: 'The operation completed successfully.' (Address: 0000000000000000)
+
+========== OUTPUTTING STACK TRACE ==================
+
+  ERROR: Error while initializing dbghelp.dll, GetLastError: 'The operation completed successfully.' (Address: 0000000000000000)
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/harri/AppData/Local/Temp/Unity Technologies/UnityEnvironment/Crashes
