@@ -432,7 +432,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: c742be1ffc8bcb84aa286024c7851bcc, type: 3}
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: SideScroller
@@ -455,7 +455,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 4000
   instanceBase: {fileID: 4276228814471500585}
 --- !u!114 &4276228814190985098
 MonoBehaviour:
@@ -615,7 +615,7 @@ MonoBehaviour:
   levelManager: {fileID: 0}
   startFlag: {fileID: 4276228814030737746}
   endFlag: {fileID: 4276228813941272726}
-  seed: 3333333
+  seed: 1354862
   LengthOfLevel: 7
 --- !u!114 &4276228814616064661
 MonoBehaviour:
