@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
         _mRB.AddForce(Vector2.up * (jumpForce + extraForce), ForceMode2D.Impulse);
         jumpingState++;
-        Debug.Log("jumping state = " + jumpingState);
+        Debug.Log("jumping state = " + jumpingState +" at frame "+Time.frameCount);
     }
 
     private void Movement_Dash()
@@ -162,6 +162,6 @@ public class PlayerController : MonoBehaviour
     public void Landed()
     {
         jumpingState = JumpingState.Grounded;
-        //Debug.Log("Landed called");
+        Debug.Log("Jumping state = Grounded at frame "+ Time.frameCount);
     }
 }

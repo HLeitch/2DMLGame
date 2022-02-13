@@ -83,7 +83,7 @@ public class SideScrollingAgent : Agent
             //gives a time limit of 100 seconds (hard coded) 
             //AddReward(-0.01f * Time.deltaTime);
 
-            AddReward(0.05f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
+            AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
 
             float movementControl = actions.ContinuousActions[0];
 

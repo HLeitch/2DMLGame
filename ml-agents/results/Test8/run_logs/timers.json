@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1644767197",
+        "python_version": "3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\harri\\python-envs\\sample-env\\Scripts\\mlagents-learn config\\ppo\\SideScroller.yaml --run-id=Test8 --force",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.4",
+        "end_time_seconds": "1644767198"
+    },
+    "total": 1.5665932,
+    "count": 1,
+    "self": 0.008931099999999859,
+    "children": {
+        "run_training.setup": {
+            "total": 0.10186300000000004,
+            "count": 1,
+            "self": 0.10186300000000004
+        },
+        "TrainerController.start_learning": {
+            "total": 1.4557991000000001,
+            "count": 1,
+            "self": 0.0003181999999999352,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 1.4554576000000001,
+                    "count": 1,
+                    "self": 1.4554576000000001
+                },
+                "trainer_threads": {
+                    "total": 1.000000000139778e-06,
+                    "count": 1,
+                    "self": 1.000000000139778e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 2.2299999999919606e-05,
+                    "count": 1,
+                    "self": 2.2299999999919606e-05
+                }
+            }
+        }
+    }
+}

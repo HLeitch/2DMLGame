@@ -88,6 +88,7 @@ public class LevelCreator : MonoBehaviour
         tileDatas.Clear();
         List<int> _tilesPlaced = new List<int>();
         int tileCounter = 0;
+        heightOfNextTile = 0;
         foreach (int i in seedi)
         {
             foreach (int j in seedj)
@@ -103,7 +104,7 @@ public class LevelCreator : MonoBehaviour
                     else
                     {
 
-                        //Creates a 1/2 digit int which is used to determine type and specific tile placed.
+                        //Creates a 1 or 2 digit int which is used to determine type and specific tile placed.
                         int currentTileSeed = (i * j) + (i + j);
                         int typeSeed = i + j;
                         _tilesPlaced.Add(currentTileSeed);
@@ -239,10 +240,10 @@ public class LevelCreator : MonoBehaviour
     private void PlaceStartFlag()
     {
         float x_pos = levelTilemap.localBounds.min.x;
-        Vector3 flagPosition = levelTilemap.GetCellCenterLocal(new Vector3Int(0, 0, 0));
+        Vector3 flagPosition = levelTilemap.GetCellCenterWorld(new Vector3Int(0, 0, 0));
         //flagPosition.x = x_pos;
 
-        startFlag.transform.localPosition = flagPosition;
+        startFlag.transform.position = flagPosition;
     }
 
 
