@@ -70,10 +70,21 @@ public class SideScrollingAgent : Agent
             AddReward(1.0f);
             EndEpisode();
         }
+        //If agent has fallen off
         if(this.transform.localPosition.y <-10)
         {
-            AddReward(-1.0f);
-            EndEpisode();
+            //Large negative reward for falling behind the start position
+            if (normalisedDistanceToGoal() > 1)
+            {
+                AddReward(-1.0f);
+                EndEpisode();
+            }
+            //Smaller negative reward for falling throughout the level
+            else
+            {
+                AddReward(-0.2f);
+                EndEpisode();
+            }
 
         }
         

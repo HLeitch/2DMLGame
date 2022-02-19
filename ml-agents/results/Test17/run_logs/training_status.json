@@ -1,0 +1,47 @@
+{
+    "SideScroller": {
+        "checkpoints": [
+            {
+                "steps": 499927,
+                "file_path": "results\\Test17\\SideScroller\\SideScroller-499927.onnx",
+                "reward": -1.0016496181488037,
+                "creation_time": 1645194112.1083617,
+                "auxillary_file_paths": [
+                    "results\\Test17\\SideScroller\\SideScroller-499927.pt"
+                ]
+            },
+            {
+                "steps": 999875,
+                "file_path": "results\\Test17\\SideScroller\\SideScroller-999875.onnx",
+                "reward": -1.0026034790401657,
+                "creation_time": 1645194960.2070544,
+                "auxillary_file_paths": [
+                    "results\\Test17\\SideScroller\\SideScroller-999875.pt"
+                ]
+            },
+            {
+                "steps": 1300889,
+                "file_path": "results\\Test17\\SideScroller\\SideScroller-1300889.onnx",
+                "reward": -1.002985850488767,
+                "creation_time": 1645195480.133989,
+                "auxillary_file_paths": [
+                    "results\\Test17\\SideScroller\\SideScroller-1300889.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1300889,
+            "file_path": "results\\Test17\\SideScroller.onnx",
+            "reward": -1.002985850488767,
+            "creation_time": 1645195480.133989,
+            "auxillary_file_paths": [
+                "results\\Test17\\SideScroller\\SideScroller-1300889.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

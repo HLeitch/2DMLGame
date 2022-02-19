@@ -6,7 +6,7 @@ behaviors:
     hyperparameters:
       batch_size: 512
       buffer_size: 5120
-      learning_rate: 0.00015
+      learning_rate: 0.0003
       beta: 0.005
       epsilon: 0.2
       lambd: 0.95
@@ -22,10 +22,16 @@ behaviors:
         strength: 1.0
         gamma: 0.99
       curiosity:
-        strength: 0.02
+        strength: 0.01
         gamma: 0.99
         learning_rate: 0.0015
     keep_checkpoints: 5
     max_steps: 30000000
     time_horizon: 300
     summary_freq: 30000
+    ##Test14 batch and buffer size reset time horizon at 300
+    ##test15 curiosity increased to 0.05
+    ##test16 curiousity increased to 0.08, learning rate to 0.0003 from 0.00015
+    ##test17 512 batch size 5120 buffer size
+    ##test 18 curiousity strength 0.01   Im thinking increase reward for moving toward goal
+    ##test 19 REward function punishes falls in level less
