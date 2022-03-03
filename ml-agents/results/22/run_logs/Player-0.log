@@ -1,0 +1,1217 @@
+Mono path[0] = 'C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Managed'
+Mono config path = 'C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/MonoBleedingEdge/etc'
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   30.0.15.1123
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.078 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.530100 ms
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+jumping state = SingleJump at frame 360
+jumping state = SingleJump at frame 360
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+jumping state = SingleJump at frame 360
+jumping state = SingleJump at frame 360
+jumping state = DoubleJump at frame 360
+jumping state = DoubleJump at frame 360
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+jumping state = DoubleJump at frame 360
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+jumping state = SingleJump at frame 360
+jumping state = DoubleJump at frame 360
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+jumping state = DoubleJump at frame 360
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 361
+Jumping state = Grounded at frame 361
+Jumping state = Grounded at frame 361
+Jumping state = Grounded at frame 361
+Jumping state = Grounded at frame 362
+jumping state = SingleJump at frame 371
+Jumping state = Grounded at frame 374
+jumping state = SingleJump at frame 375
+Jumping state = Grounded at frame 378
+jumping state = SingleJump at frame 393
+jumping state = SingleJump at frame 394
+Jumping state = Grounded at frame 396
+Jumping state = Grounded at frame 396
+jumping state = SingleJump at frame 416
+Jumping state = Grounded at frame 419
+jumping state = SingleJump at frame 419
+jumping state = SingleJump at frame 420
+Jumping state = Grounded at frame 422
+Jumping state = Grounded at frame 422
+jumping state = SingleJump at frame 434
+Jumping state = Grounded at frame 436
+jumping state = SingleJump at frame 459
+Jumping state = Grounded at frame 461
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 480
+Jumping state = Grounded at frame 481
+Jumping state = Grounded at frame 481
+Jumping state = Grounded at frame 481
+Jumping state = Grounded at frame 482
+jumping state = SingleJump at frame 513
+Jumping state = Grounded at frame 515
+jumping state = SingleJump at frame 520
+Jumping state = Grounded at frame 523
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 600
+Jumping state = Grounded at frame 601
+Jumping state = Grounded at frame 601
+Jumping state = Grounded at frame 601
+Jumping state = Grounded at frame 602
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 720
+Jumping state = Grounded at frame 721
+Jumping state = Grounded at frame 721
+Jumping state = Grounded at frame 721
+Jumping state = Grounded at frame 722
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 840
+Jumping state = Grounded at frame 841
+Jumping state = Grounded at frame 841
+Jumping state = Grounded at frame 841
+Jumping state = Grounded at frame 842
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 960
+Jumping state = Grounded at frame 961
+Jumping state = Grounded at frame 961
+Jumping state = Grounded at frame 961
+Jumping state = Grounded at frame 962
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1080
+Jumping state = Grounded at frame 1081
+Jumping state = Grounded at frame 1081
+Jumping state = Grounded at frame 1081
+Jumping state = Grounded at frame 1082
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1200
+Jumping state = Grounded at frame 1201
+Jumping state = Grounded at frame 1201
+Jumping state = Grounded at frame 1201
+Jumping state = Grounded at frame 1202
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1320
+Jumping state = Grounded at frame 1321
+Jumping state = Grounded at frame 1321
+Jumping state = Grounded at frame 1321
+Jumping state = Grounded at frame 1322
+Jumping state = Grounded at frame 1365
+Jumping state = Grounded at frame 1365
+Jumping state = Grounded at frame 1365
+Jumping state = Grounded at frame 1365
+Jumping state = Grounded at frame 1365
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1368
+Jumping state = Grounded at frame 1369
+Jumping state = Grounded at frame 1369
+Jumping state = Grounded at frame 1369
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1371
+Jumping state = Grounded at frame 1371
+Jumping state = Grounded at frame 1371
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1376
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1378
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1381
+Jumping state = Grounded at frame 1405
+Jumping state = Grounded at frame 1405
+Jumping state = Grounded at frame 1406
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1408
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1410
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1411
+Jumping state = Grounded at frame 1411
+Jumping state = Grounded at frame 1411
+Jumping state = Grounded at frame 1412
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1414
+Jumping state = Grounded at frame 1415
+Jumping state = Grounded at frame 1415
+Jumping state = Grounded at frame 1415
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1418
+Jumping state = Grounded at frame 1439
+Jumping state = Grounded at frame 1440
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1441
+Jumping state = Grounded at frame 1441
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1442
+Jumping state = Grounded at frame 1443
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1444
+Jumping state = Grounded at frame 1445
+Jumping state = Grounded at frame 1445
+Jumping state = Grounded at frame 1445
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1449
+Jumping state = Grounded at frame 1469
+Jumping state = Grounded at frame 1469
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1472
+Jumping state = Grounded at frame 1472
+Jumping state = Grounded at frame 1472
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1473
+Jumping state = Grounded at frame 1473
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1474
+Jumping state = Grounded at frame 1474
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1476
+Jumping state = Grounded at frame 1477
+Jumping state = Grounded at frame 1498
+Jumping state = Grounded at frame 1499
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1502
+Jumping state = Grounded at frame 1506
+Jumping state = Grounded at frame 1506
+Jumping state = Grounded at frame 1506
+Jumping state = Grounded at frame 1506
+Jumping state = Grounded at frame 1506
+Jumping state = Grounded at frame 1507
+Jumping state = Grounded at frame 1508
+Jumping state = Grounded at frame 1508
+Jumping state = Grounded at frame 1508
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1509
+Jumping state = Grounded at frame 1509
+Jumping state = Grounded at frame 1509
+Jumping state = Grounded at frame 1509
+Jumping state = Grounded at frame 1510
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1512
+Jumping state = Grounded at frame 1512
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1596
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1622
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1630
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1632
+Jumping state = Grounded at frame 1632
+1354862
+MY TILEMAP IS = 2216
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1716
+1354862
+MY TILEMAP IS = 2192
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1742
+1354862
+MY TILEMAP IS = 2248
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1750
+1354862
+MY TILEMAP IS = 2160
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+1354862
+MY TILEMAP IS = 2218
+TILES = 7,11,9,17,13
+Level Generated
+Number Of Jumps In each tile: 0, 4, 2, 1, 1, 0, 0, 
+Jumping state = Grounded at frame 1752
+Jumping state = Grounded at frame 1752
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 1fc4 -> priority: 1 
+  Thread -> id: 4860 -> priority: 1 
+  Thread -> id: 4190 -> priority: 1 
+  Thread -> id: 1448 -> priority: 1 

@@ -39,9 +39,10 @@ public class CameraDriver : MonoBehaviour
 
     private void moveCamera()
     {
-        Vector3 newPosition = this.transform.position;
-        float player_x = player.transform.position.x;
-        float player_y = player.transform.position.y;
+        Vector3 newPosition = this.transform.localPosition;
+        float player_x = player.transform.localPosition.x;
+        float player_y = player.transform.localPosition.y;
+        //float ylim = player_y + yLimMove;
 
         if (player_x > levelManager.levelStart.x && player_x < levelManager.levelEnd.x)
         {
@@ -53,8 +54,8 @@ public class CameraDriver : MonoBehaviour
             newPosition.y = player_y - yLimMove;
         }
 
-
-        this.transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref _velocity, smoothTime);
+        //into world space
+        this.transform.localPosition = Vector3.SmoothDamp(transform.localPosition, newPosition, ref _velocity, smoothTime);
         
     }
 }
