@@ -71,8 +71,11 @@ public class PlayerController : MonoBehaviour
         //This allows access to the otherwise readonly discreet actions.
         //If funtionality is not as it should be this seems like a fragile piece of code. 
         ActionSegment<int> discreteActions = actionsOut.DiscreteActions;
+        ActionSegment<float> continuousActions = actionsOut.ContinuousActions;
+
         float horizontal = Input.GetAxis("Horizontal");
-        discreteActions[0] = (int) horizontal;
+
+        continuousActions[0] = (int) horizontal;
 
         if (Input.GetKeyUp("space"))
         {
@@ -84,7 +87,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyUp("left shift"))
         {
-           discreteActions[3] = 3;
+           discreteActions[3] = 1;
         }
 
     }

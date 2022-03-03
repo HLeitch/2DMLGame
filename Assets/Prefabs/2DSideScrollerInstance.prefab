@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 4276228814190985102}
   - component: {fileID: 4276228814190985089}
   - component: {fileID: 4276228814190985098}
+  - component: {fileID: 936245326}
   m_Layer: 6
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -426,13 +427,13 @@ MonoBehaviour:
     VectorObservationSize: 6
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 4
-      BranchSizes: 01000000
+      m_NumContinuousActions: 1
+      BranchSizes: 000000000000000000000000000000000000000000000000
     VectorActionSize: 
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: c742be1ffc8bcb84aa286024c7851bcc, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: SideScroller
@@ -471,6 +472,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionPeriod: 1
   TakeActionsBetweenDecisions: 0
+--- !u!114 &936245326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276228814190985091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Record: 1
+  NumStepsToRecord: 0
+  DemonstrationName: SideScroller2
+  DemonstrationDirectory: 
 --- !u!1 &4276228814411308603
 GameObject:
   m_ObjectHideFlags: 0
