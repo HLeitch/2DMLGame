@@ -35,3 +35,4 @@ behaviors:
     ##test17 512 batch size 5120 buffer size
     ##test 18 curiousity strength 0.01   Im thinking increase reward for moving toward goal
     ##test 19 REward function punishes falls in level less
+    ##Thats it. think its time to start imitation learning
