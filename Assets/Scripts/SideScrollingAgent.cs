@@ -96,19 +96,27 @@ public class SideScrollingAgent : Agent
 
             AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
 
-            float movementControl = actions.ContinuousActions[0];
+            float movementControl = actions.DiscreteActions[0];
 
-            float jumpControl = actions.ContinuousActions[1];
+            float jumpControl = actions.DiscreteActions[1];
 
-            float StompControl = actions.ContinuousActions[2];
+            float StompControl = actions.DiscreteActions[2];
 
-            float dashControl = actions.ContinuousActions[3];
+            float dashControl = actions.DiscreteActions[3];
 
             playerController.aiCallMovement(movementControl,0);
 
-            if (jumpControl > 0.9)
+            if (jumpControl > 0.9f)
             {
                 playerController.Instruct_Jump();
+            }
+            if (StompControl > 0.9f)
+            {
+                playerController.Instruct_Stomp();
+            }
+            if(dashControl > 0.9f)
+            {
+                playerController.Instruct_Dash();
             }
 
         }
@@ -116,7 +124,7 @@ public class SideScrollingAgent : Agent
     }
     public override void Heuristic(in ActionBuffers actionsOut)
     {
-        playerController.PlayerInput();
+        playerController.PlayerInput(in actionsOut);
 
 
 

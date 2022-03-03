@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.MLAgents;
+using Unity.MLAgents.Actuators;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -45,25 +47,44 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// Human Player input
     /// </summary>
-    public void PlayerInput()
+    public void PlayerInput(in ActionBuffers actionsOut)
     {
+        /* float horizontal = Input.GetAxis("Horizontal");
+         float vertical = Input.GetAxis("Vertical");
+
+         Vector2 distanceMoved = Instruct_Movement(horizontal, vertical);
+
+         _movementSinceLastPhysUpdate += distanceMoved;
+         if (Input.GetKeyUp("space"))
+         {
+             Instruct_Jump();
+         }
+         if (Input.GetKeyUp("s"))
+         {
+             Instruct_Stomp();
+         }
+         if (Input.GetKeyUp("left shift"))
+         {
+             Instruct_Dash();
+         }*/
+
+        //This allows access to the otherwise readonly discreet actions.
+        //If funtionality is not as it should be this seems like a fragile piece of code. 
+        ActionSegment<int> discreteActions = actionsOut.DiscreteActions;
         float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        discreteActions[0] = (int) horizontal;
 
-        Vector2 distanceMoved = Instruct_Movement(horizontal, vertical);
-
-        _movementSinceLastPhysUpdate += distanceMoved;
         if (Input.GetKeyUp("space"))
         {
-            Instruct_Jump();
+            discreteActions[1] = 1;
         }
         if (Input.GetKeyUp("s"))
         {
-            Instruct_Stomp();
+            discreteActions[2] = 1;
         }
         if (Input.GetKeyUp("left shift"))
         {
-            Instruct_Dash();
+           discreteActions[3] = 3;
         }
 
     }
