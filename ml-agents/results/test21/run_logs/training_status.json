@@ -1,26 +1,4 @@
 {
-    "SideScroller": {
-        "checkpoints": [
-            {
-                "steps": 114862,
-                "file_path": "results\\test21\\SideScroller\\SideScroller-114862.onnx",
-                "reward": null,
-                "creation_time": 1646051816.8868895,
-                "auxillary_file_paths": [
-                    "results\\test21\\SideScroller\\SideScroller-114862.pt"
-                ]
-            }
-        ],
-        "final_checkpoint": {
-            "steps": 114862,
-            "file_path": "results\\test21\\SideScroller.onnx",
-            "reward": null,
-            "creation_time": 1646051816.8868895,
-            "auxillary_file_paths": [
-                "results\\test21\\SideScroller\\SideScroller-114862.pt"
-            ]
-        }
-    },
     "metadata": {
         "stats_format_version": "0.3.0",
         "mlagents_version": "0.27.0",
