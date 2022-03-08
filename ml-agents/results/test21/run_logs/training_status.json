@@ -1,4 +1,26 @@
 {
+    "SideScroller": {
+        "checkpoints": [
+            {
+                "steps": 390969,
+                "file_path": "results\\Test21\\SideScroller\\SideScroller-390969.onnx",
+                "reward": null,
+                "creation_time": 1646746765.8147647,
+                "auxillary_file_paths": [
+                    "results\\Test21\\SideScroller\\SideScroller-390969.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 390969,
+            "file_path": "results\\Test21\\SideScroller.onnx",
+            "reward": null,
+            "creation_time": 1646746765.8147647,
+            "auxillary_file_paths": [
+                "results\\Test21\\SideScroller\\SideScroller-390969.pt"
+            ]
+        }
+    },
     "metadata": {
         "stats_format_version": "0.3.0",
         "mlagents_version": "0.27.0",

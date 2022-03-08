@@ -75,19 +75,19 @@ public class PlayerController : MonoBehaviour
 
         float horizontal = Input.GetAxis("Horizontal");
 
-        continuousActions[0] = (int) horizontal;
+        continuousActions[0] = horizontal;
 
         if (Input.GetKeyUp("space"))
         {
-            discreteActions[1] = 1;
+            discreteActions[0] = 1;
         }
         if (Input.GetKeyUp("s"))
         {
-            discreteActions[2] = 1;
+            discreteActions[1] = 1;
         }
         if (Input.GetKeyUp("left shift"))
         {
-           discreteActions[3] = 1;
+           discreteActions[2] = 1;
         }
 
     }

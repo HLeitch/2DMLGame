@@ -98,11 +98,11 @@ public class SideScrollingAgent : Agent
 
             float movementControl = actions.ContinuousActions[0];
 
-            float jumpControl = actions.DiscreteActions[1];
+            float jumpControl = actions.DiscreteActions[0];
 
-            float StompControl = actions.DiscreteActions[2];
+            float StompControl = actions.DiscreteActions[1];
 
-            float dashControl = actions.DiscreteActions[3];
+            float dashControl = actions.DiscreteActions[2];
 
             playerController.aiCallMovement(movementControl,0);
 
