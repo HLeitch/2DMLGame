@@ -170,9 +170,13 @@ public class PlayerController : MonoBehaviour
     private void Movement_Dash()
     {
         jumpingState = JumpingState.Dash;
-        _mRB.AddForce(_mRB.velocity * dashForce, ForceMode2D.Impulse);
+        float xdir = _movementSinceLastPhysUpdate.x;
+        if (xdir > 0) { xdir = 1; }
+        if (xdir < 0) { xdir = -1; }
+        if (xdir == 0) { xdir = 0; }
+        _mRB.AddForce(new Vector2(xdir,0) * dashForce, ForceMode2D.Impulse);
 
-        //Debug.Log("Jumping State = " + jumpingState);
+        Debug.Log("Jumping State = " + jumpingState);
     }
 
     private void Movement_Stomp()
