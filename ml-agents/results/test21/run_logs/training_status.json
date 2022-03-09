@@ -2,22 +2,22 @@
     "SideScroller": {
         "checkpoints": [
             {
-                "steps": 114862,
-                "file_path": "results\\test21\\SideScroller\\SideScroller-114862.onnx",
+                "steps": 390969,
+                "file_path": "results\\Test21\\SideScroller\\SideScroller-390969.onnx",
                 "reward": null,
-                "creation_time": 1646051816.8868895,
+                "creation_time": 1646746765.8147647,
                 "auxillary_file_paths": [
-                    "results\\test21\\SideScroller\\SideScroller-114862.pt"
+                    "results\\Test21\\SideScroller\\SideScroller-390969.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 114862,
-            "file_path": "results\\test21\\SideScroller.onnx",
+            "steps": 390969,
+            "file_path": "results\\Test21\\SideScroller.onnx",
             "reward": null,
-            "creation_time": 1646051816.8868895,
+            "creation_time": 1646746765.8147647,
             "auxillary_file_paths": [
-                "results\\test21\\SideScroller\\SideScroller-114862.pt"
+                "results\\Test21\\SideScroller\\SideScroller-390969.pt"
             ]
         }
     },

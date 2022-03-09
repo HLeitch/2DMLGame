@@ -96,13 +96,13 @@ public class SideScrollingAgent : Agent
 
             AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
 
-            float movementControl = actions.DiscreteActions[0];
+            float movementControl = actions.ContinuousActions[0];
 
-            float jumpControl = actions.DiscreteActions[1];
+            float jumpControl = actions.DiscreteActions[0];
 
-            float StompControl = actions.DiscreteActions[2];
+            float StompControl = actions.DiscreteActions[1];
 
-            float dashControl = actions.DiscreteActions[3];
+            float dashControl = actions.DiscreteActions[2];
 
             playerController.aiCallMovement(movementControl,0);
 
