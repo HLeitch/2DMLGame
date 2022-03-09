@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4276228814620940314, guid: c0210be5528597543840bb86a36264b6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0210be5528597543840bb86a36264b6, type: 3}
@@ -472,7 +472,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 936245326, guid: c0210be5528597543840bb86a36264b6, type: 3}
       propertyPath: Record
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4276228814471500566, guid: c0210be5528597543840bb86a36264b6, type: 3}
       propertyPath: m_RootOrder
@@ -521,6 +521,10 @@ PrefabInstance:
     - target: {fileID: 4276228814471500585, guid: c0210be5528597543840bb86a36264b6, type: 3}
       propertyPath: m_Name
       value: 2DSideScrollerInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276228814620940314, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0210be5528597543840bb86a36264b6, type: 3}
