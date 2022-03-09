@@ -55,7 +55,7 @@ behaviors:
         encoding_size: null
         use_actions: false
         use_vail: false
-        demo_path: Demos/exSideScroll.demo
+        demo_path: Demos/SideScroller2_1.demo
     init_path: null
     keep_checkpoints: 5
     checkpoint_interval: 500000
@@ -65,7 +65,7 @@ behaviors:
     threaded: false
     self_play: null
     behavioral_cloning:
-      demo_path: Demos/exSideScroll.demo
+      demo_path: Demos/SideScroller2_1.demo
       steps: 150000
       strength: 0.5
       samples_per_update: 0
@@ -87,11 +87,11 @@ engine_settings:
   no_graphics: false
 environment_parameters: null
 checkpoint_settings:
-  run_id: test21
+  run_id: Test21
   initialize_from: null
   load_model: false
   resume: false
-  force: false
+  force: true
   train_model: false
   inference: false
   results_dir: results
