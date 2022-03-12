@@ -632,7 +632,7 @@ MonoBehaviour:
   levelManager: {fileID: 0}
   startFlag: {fileID: 4276228814030737746}
   endFlag: {fileID: 4276228813941272726}
-  seed: 1354862
+  seed: 3333333
   LengthOfLevel: 7
 --- !u!114 &4276228814616064661
 MonoBehaviour:
