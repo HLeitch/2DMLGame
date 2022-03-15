@@ -3,6 +3,7 @@ behaviors:
     trainer_type: ppo
     time_horizon: 128
     max_steps: 1.0e7
+    threaded: true
     hyperparameters:
       batch_size: 128
       beta: 0.01
@@ -25,12 +26,12 @@ behaviors:
         network_settings:
           hidden_units: 256
       gail:
-        strength: 0.01
+        strength: 0.3
         gamma: 0.99
         demo_path: Demos/SideScroller2_1.demo
     behavioral_cloning:
       demo_path: Demos/SideScroller2_1.demo
       strength: 0.5
       steps: 150000
-      num_epoch: 3
+      num_epoch: 3 
       ##Test20 3 epochs
