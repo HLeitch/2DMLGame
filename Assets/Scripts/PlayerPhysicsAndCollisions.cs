@@ -6,14 +6,14 @@ using UnityEngine;
 
 public class PlayerPhysicsAndCollisions : MonoBehaviour
 {
-    public CompositeCollider2D colliders;
+    public BoxCollider2D colliders;
     private PlayerController playerController;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        colliders = GetComponent<CompositeCollider2D>();
+        //colliders = GetComponent<BoxCollider2D>();
         playerController = GetComponentInParent<PlayerController>();
     }
 

@@ -361,6 +361,8 @@ MonoBehaviour:
   maxSpeed: 5
   jumpForce: 8
   dashForce: 5
+  jumpDelay: 0.1
+  canJump: 1
   jumpingState: 0
 --- !u!66 &4276228814190985100
 CompositeCollider2D:
@@ -424,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 6
+    VectorObservationSize: 3
     NumStackedVectorObservations: 6
     m_ActionSpec:
       m_NumContinuousActions: 1
