@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _mRB;
     public float jumpForce = 8f;
     public float dashForce = 4f;
+
+    public float jumpDelay = 0.1f;
+    public bool canJump = true;
     
     public JumpingState jumpingState = JumpingState.Grounded;
     
@@ -36,13 +39,20 @@ public class PlayerController : MonoBehaviour
 
         _movementSinceLastPhysUpdate = new Vector2(0, 0);
 
-        if(jumpinPhysicsUpdate)
+        if(jumpinPhysicsUpdate && canJump)
         {
+            StartCoroutine(jumpCooldown());
+
             PhysicsUpdateJump();
             jumpinPhysicsUpdate = false;
         }
     }
-
+    IEnumerator jumpCooldown()
+    {
+        canJump = false;
+        yield return new WaitForSeconds(jumpDelay);
+        canJump = true;
+    }
 
     /// <summary>
     /// Human Player input
