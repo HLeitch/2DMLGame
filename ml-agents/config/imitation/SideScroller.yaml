@@ -10,8 +10,8 @@ behaviors:
       buffer_size: 2048
       epsilon: 0.2
       lambd: 0.95
-      learning_rate: 0.0003
-      num_epoch: 5
+      learning_rate: 0.003
+      num_epoch: 3
     network_settings:
       num_layers: 2
       normalize: false
@@ -33,6 +33,6 @@ behaviors:
       demo_path: Demos/SideScroller2_1.demo
       strength: 0.5
       steps: 150000
-      num_epoch: 5
+      num_epoch: 3
       ##Test20 3 epochs
       #Test28 gail strength 0.3, num epochs of BC and PPO = 5
