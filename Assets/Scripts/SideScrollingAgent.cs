@@ -49,7 +49,7 @@ public class SideScrollingAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(this.transform.localPosition);
+        //sensor.AddObservation(this.transform.localPosition);
         sensor.AddObservation(this.rigidbody2D.velocity.x);
         sensor.AddObservation(this.rigidbody2D.velocity.y);
         sensor.AddObservation((int) jumpingState);

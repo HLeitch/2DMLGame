@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
 
     public  void Instruct_Stomp()
     {
-        if ((jumpingState != JumpingState.Grounded && jumpingState != JumpingState.Stomping))
+        if ((jumpingState == JumpingState.SingleJump))
         {
             Movement_Stomp();
         }
@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
 
     public void Instruct_Dash()
     {
-        if ((jumpingState != JumpingState.Grounded) && (jumpingState != JumpingState.Stomping))
+        if ((jumpingState == JumpingState.SingleJump))
         {
             Movement_Dash();
         }
@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
     private void PhysicsUpdateJump()
     {
-        if (jumpingState < JumpingState.DoubleJump)
+        if ((jumpingState == JumpingState.SingleJump) || (jumpingState == JumpingState.Grounded))
         {
             Movement_Jump();
         }
