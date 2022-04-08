@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1648650757",
+        "python_version": "3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\harri\\python-envs\\sample-env\\Scripts\\mlagents-learn config\\imitation\\SideScroller.yaml --run-id=Test37 --time-scale=3 --env=Build\\Game.exe --resume",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.4",
+        "end_time_seconds": "1648650760"
+    },
+    "total": 2.5119211999999997,
+    "count": 1,
+    "self": 0.014240800000000053,
+    "children": {
+        "run_training.setup": {
+            "total": 0.19676470000000013,
+            "count": 1,
+            "self": 0.19676470000000013
+        },
+        "TrainerController.start_learning": {
+            "total": 2.3009156999999996,
+            "count": 1,
+            "self": 0.000507499999999883,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 2.3003942000000004,
+                    "count": 1,
+                    "self": 2.3003942000000004
+                },
+                "trainer_threads": {
+                    "total": 2.3999999996249244e-06,
+                    "count": 1,
+                    "self": 2.3999999996249244e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 1.1599999999667432e-05,
+                    "count": 1,
+                    "self": 1.1599999999667432e-05
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Sensors.Reflection; //for using the Observable attribute
 using Unity.MLAgents.Actuators;
+using System;
 
 public class SideScrollingAgent : Agent
 {
@@ -14,6 +15,10 @@ public class SideScrollingAgent : Agent
     
     Rigidbody2D rigidbody2D;
 
+    [SerializeField]
+    private int distanceRewardTimestepGap = 50;
+    private float minDistanceReached = 1.0f;
+    
     [Observable]
     JumpingState jumpingState { get { return playerController.jumpingState; } }
 
@@ -44,7 +49,7 @@ public class SideScrollingAgent : Agent
 
         this.rigidbody2D.transform.localPosition = levelCreator.startFlag.transform.localPosition;
         this.rigidbody2D.velocity = Vector3.zero;
-        
+        minDistanceReached = 1.0f;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -56,8 +61,6 @@ public class SideScrollingAgent : Agent
 
     }
 
-  
-
     public override void OnActionReceived(ActionBuffers actions)
     {
         // Debug.Log($"normalized distance to goal = {normalisedDistanceToGoal()}");
@@ -65,7 +68,7 @@ public class SideScrollingAgent : Agent
         string outputActions = actions.ContinuousActions.Array.ToString();
         //Debug.Log($"Continuous Buffer = {outputActions}");
 
-        if(normalisedDistanceToGoal() < 0.05f)
+        if(normalisedDistanceToGoal() < 0.02f)
         {
             AddReward(1.0f);
             EndEpisode();
@@ -87,14 +90,22 @@ public class SideScrollingAgent : Agent
             }
 
         }
-        
+
         else
         {
             //add a small penalty for not finishing the level
             //gives a time limit of 100 seconds (hard coded) 
             //AddReward(-0.01f * Time.deltaTime);
 
-            AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
+            //AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
+            
+            
+            //AddReward(0.001f * (1 - normalisedDistanceToGoal()));
+            
+            if(Academy.Instance.StepCount%distanceRewardTimestepGap==0)
+            {
+                _RewardDistanceTravelled();
+            }
 
             float movementControl = actions.ContinuousActions[0];
 
@@ -122,6 +133,24 @@ public class SideScrollingAgent : Agent
         }
         Vector2 controlSignal = Vector2.zero;
     }
+
+    private void _RewardDistanceTravelled()
+    {
+        //Agent is not as far as it's maximum or has stayed still within this episode
+        if (normalisedDistanceToGoal() >= minDistanceReached)
+        {
+            //return nothing
+        }
+
+        //The agent has moved forward from the previous maximum record
+        else
+        {
+            minDistanceReached = normalisedDistanceToGoal();
+            AddReward(0.01f * normalisedDistanceToGoal());
+        }
+                
+    }
+
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         playerController.PlayerInput(in actionsOut);

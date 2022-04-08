@@ -26,13 +26,14 @@ behaviors:
         network_settings:
           hidden_units: 256
       gail:
-        strength: 0.3
+        strength: 0.1
         gamma: 0.99
         demo_path: Demos/SideScroller2_1.demo
     behavioral_cloning:
       demo_path: Demos/SideScroller2_1.demo
-      strength: 0.5
+      strength: 0.3
       steps: 150000
       num_epoch: 3
       ##Test20 3 epochs
       #Test28 gail strength 0.3, num epochs of BC and PPO = 5
+      #Test 34 gail strenth 0.1 BC strength 0.3

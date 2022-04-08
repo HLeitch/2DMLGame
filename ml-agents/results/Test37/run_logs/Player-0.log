@@ -1,0 +1,65 @@
+Mono path[0] = 'C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Managed'
+Mono config path = 'C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/MonoBleedingEdge/etc'
+PlayerConnection initialized from C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55125
+Multi-casting "[IP] 192.168.0.74 [Port] 55125 [Flags] 2 [Guid] 1380631779 [EditorId] 401747187 [Version] 1048832 [Id] WindowsPlayer(LAPTOP-VAS4LIPD) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] Game" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55125]
+PlayerConnection already initialized - listening to [0.0.0.0:55125]
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   30.0.15.1123
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.240 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.997600 ms
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libcoreclr.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libdl.so
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/ml-agents/Build/Game_Data/Mono/libSystem.dylib
+failed to get 100ns ticks
+Couldn't connect to trainer on port 5005 using API version 1.5.0. Will perform inference instead.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Unity.MLAgents.Academy:InitializeEnvironment () (at C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Runtime/Academy.cs:459)
+Unity.MLAgents.Academy:LazyInitialize () (at C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Runtime/Academy.cs:279)
+Unity.MLAgents.Academy:.ctor () (at C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Runtime/Academy.cs:248)
+Unity.MLAgents.Academy/<>c:<.cctor>b__82_0 () (at C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Runtime/Academy.cs:117)
+System.Lazy`1<Unity.MLAgents.Academy>:CreateValue ()
+System.Lazy`1<Unity.MLAgents.Academy>:LazyInitValue ()
+System.Lazy`1<Unity.MLAgents.Academy>:get_Value ()
+Unity.MLAgents.Academy:get_Instance () (at C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Runtime/Academy.cs:132)
+Unity.MLAgents.Agent:LazyInitialize () (at C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Runtime/Agent.cs:451)
+Unity.MLAgents.Agent:OnEnable () (at C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Runtime/Agent.cs:365)
+
+(Filename: C:/Users/harri/OneDrive/Documents/Year 3/Project/LearningGitTracker/Library/PackageCache/com.unity.ml-agents@2.1.0-exp.1/Runtime/Academy.cs Line: 459)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 572c -> priority: 1 
+  Thread -> id: 59b8 -> priority: 1 
+  Thread -> id: 6808 -> priority: 1 
+  Thread -> id: 5a64 -> priority: 1 
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1648650767457,"processId":19680,"allocatedMemory":217076,"memoryLabels":[{"Permanent":40},{"NewDelete":256},{"Thread":72},{"Manager":1520},{"GfxDevice":210584},{"Serialization":456},{"WebCam":32},{"String":572},{"HashMap":1536},{"PoolAlloc":56},{"GI":296},{"VR":1560},{"Subsystems":96}]}
