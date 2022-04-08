@@ -11,8 +11,6 @@ behaviors:
       lambd: 0.95
       num_epoch: 3
       learning_rate_schedule: linear
-      beta_schedule: linear
-      epsilon_schedule: linear
     network_settings:
       normalize: false
       hidden_units: 512
@@ -20,7 +18,6 @@ behaviors:
       vis_encode_type: simple
       memory: null
       goal_conditioning_type: hyper
-      deterministic: false
     reward_signals:
       extrinsic:
         gamma: 0.99
@@ -32,7 +29,6 @@ behaviors:
           vis_encode_type: simple
           memory: null
           goal_conditioning_type: hyper
-          deterministic: false
       curiosity:
         gamma: 0.99
         strength: 0.02
@@ -43,7 +39,6 @@ behaviors:
           vis_encode_type: simple
           memory: null
           goal_conditioning_type: hyper
-          deterministic: false
         learning_rate: 0.0003
         encoding_size: null
       gail:
@@ -56,7 +51,6 @@ behaviors:
           vis_encode_type: simple
           memory: null
           goal_conditioning_type: hyper
-          deterministic: false
         learning_rate: 0.0003
         encoding_size: null
         use_actions: false
@@ -78,33 +72,29 @@ behaviors:
       num_epoch: 3
       batch_size: null
 env_settings:
-  env_path: null
+  env_path: Build\Game.exe
   env_args: null
   base_port: 5005
   num_envs: 1
-  num_areas: 1
   seed: -1
-  max_lifetime_restarts: 10
-  restarts_rate_limit_n: 1
-  restarts_rate_limit_period_s: 60
 engine_settings:
   width: 84
   height: 84
   quality_level: 5
-  time_scale: 20.0
+  time_scale: 3.0
   target_frame_rate: -1
   capture_frame_rate: 60
-  no_graphics: false
+  no_graphics: true
 environment_parameters: null
 checkpoint_settings:
   run_id: Test29
   initialize_from: null
   load_model: false
-  resume: false
+  resume: true
   force: false
   train_model: false
   inference: false
   results_dir: results
 torch_settings:
-  device: cuda
+  device: null
 debug: false
