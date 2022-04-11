@@ -487,9 +487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Record: 0
+  Record: 1
   NumStepsToRecord: 0
-  DemonstrationName: SideScroller2
+  DemonstrationName: SideScroller_Complex
   DemonstrationDirectory: 
 --- !u!1 &4276228814411308603
 GameObject:
@@ -635,8 +635,8 @@ MonoBehaviour:
   levelManager: {fileID: 0}
   startFlag: {fileID: 4276228814030737746}
   endFlag: {fileID: 4276228813941272726}
-  seed: 3333333
-  LengthOfLevel: 7
+  seed: 5721799
+  LengthOfLevel: 12
 --- !u!114 &4276228814616064661
 MonoBehaviour:
   m_ObjectHideFlags: 0
