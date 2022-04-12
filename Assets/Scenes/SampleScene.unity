@@ -474,6 +474,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 936245326, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: Record
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276228814190985088, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: dashForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276228814190985088, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: jumpDelay
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276228814190985088, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276228814190985102, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_BehaviorType
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 4276228814471500566, guid: c0210be5528597543840bb86a36264b6, type: 3}
       propertyPath: m_RootOrder
       value: 0
