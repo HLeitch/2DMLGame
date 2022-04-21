@@ -2,6 +2,7 @@
     "name": "root",
     "gauges": {
         "SideScroller.Policy.Entropy.mean": {
+<<<<<<< Updated upstream
             "value": 39.6599235534668,
             "min": 31.59663963317871,
             "max": 39.6599235534668,
@@ -192,16 +193,226 @@
             "min": 0.15205676489715925,
             "max": 0.5040277172490331,
             "count": 65
+=======
+            "value": 31.304922103881836,
+            "min": 0.07528842985630035,
+            "max": 31.304922103881836,
+            "count": 92
+        },
+        "SideScroller.Policy.Entropy.sum": {
+            "value": 1596394.5,
+            "min": 3858.908447265625,
+            "max": 1596394.5,
+            "count": 92
+        },
+        "SideScroller.Step.mean": {
+            "value": 4599939.0,
+            "min": 49878.0,
+            "max": 4599939.0,
+            "count": 92
+        },
+        "SideScroller.Step.sum": {
+            "value": 4599939.0,
+            "min": 49878.0,
+            "max": 4599939.0,
+            "count": 92
+        },
+        "SideScroller.Policy.ExtrinsicValueEstimate.mean": {
+            "value": 0.016572119668126106,
+            "min": -0.5277891755104065,
+            "max": 0.1198689341545105,
+            "count": 92
+        },
+        "SideScroller.Policy.ExtrinsicValueEstimate.sum": {
+            "value": 6.628848075866699,
+            "min": -270.755859375,
+            "max": 47.82770538330078,
+            "count": 92
+        },
+        "SideScroller.Policy.CuriosityValueEstimate.mean": {
+            "value": 99.94345092773438,
+            "min": 1.0896862745285034,
+            "max": 113.55555725097656,
+            "count": 92
+        },
+        "SideScroller.Policy.CuriosityValueEstimate.sum": {
+            "value": 39977.37890625,
+            "min": 434.7848205566406,
+            "max": 58594.66796875,
+            "count": 92
+        },
+        "SideScroller.Policy.GailValueEstimate.mean": {
+            "value": 1.001795768737793,
+            "min": -0.02260953187942505,
+            "max": 7.127521514892578,
+            "count": 92
+        },
+        "SideScroller.Policy.GailValueEstimate.sum": {
+            "value": 400.71832275390625,
+            "min": -11.598690032958984,
+            "max": 2929.411376953125,
+            "count": 92
+        },
+        "SideScroller.Environment.EpisodeLength.mean": {
+            "value": 3999.0,
+            "min": 193.390625,
+            "max": 3999.0,
+            "count": 92
+        },
+        "SideScroller.Environment.EpisodeLength.sum": {
+            "value": 47988.0,
+            "min": 39990.0,
+            "max": 58840.0,
+            "count": 92
+        },
+        "SideScroller.Losses.PolicyLoss.mean": {
+            "value": 0.0688511839941497,
+            "min": 0.0632759542227504,
+            "max": 0.10750389765386993,
+            "count": 92
+        },
+        "SideScroller.Losses.PolicyLoss.sum": {
+            "value": 1.6524284158595928,
+            "min": 1.4789932015458516,
+            "max": 2.2575818507312686,
+            "count": 92
+        },
+        "SideScroller.Losses.ValueLoss.mean": {
+            "value": 0.012704697297320105,
+            "min": 0.00400021319767927,
+            "max": 1.2125170151689895,
+            "count": 92
+        },
+        "SideScroller.Losses.ValueLoss.sum": {
+            "value": 0.3049127351356825,
+            "min": 0.09200490354662322,
+            "max": 26.67537433371777,
+            "count": 92
+        },
+        "SideScroller.Policy.LearningRate.mean": {
+            "value": 0.0016274607457513102,
+            "min": 0.0016274607457513102,
+            "max": 0.0029924974581448213,
+            "count": 92
+        },
+        "SideScroller.Policy.LearningRate.sum": {
+            "value": 0.03905905789803144,
+            "min": 0.03777612674079581,
+            "max": 0.07038395165386829,
+            "count": 92
+        },
+        "SideScroller.Policy.Epsilon.mean": {
+            "value": 0.15424869,
+            "min": 0.15424869,
+            "max": 0.19974991526315797,
+            "count": 92
+        },
+        "SideScroller.Policy.Epsilon.sum": {
+            "value": 3.70196856,
+            "min": 3.55920419,
+            "max": 4.74613172,
+            "count": 92
+        },
+        "SideScroller.Policy.Beta.mean": {
+            "value": 0.005429444131000001,
+            "min": 0.005429444131000001,
+            "max": 0.009975016534789473,
+            "count": 92
+        },
+        "SideScroller.Policy.Beta.sum": {
+            "value": 0.13030665914400003,
+            "min": 0.126024498581,
+            "max": 0.234618558828,
+            "count": 92
+        },
+        "SideScroller.Losses.CuriosityForwardLoss.mean": {
+            "value": 5.2271780853246744e+16,
+            "min": 1.1667804698189304,
+            "max": 5.2271780853246744e+16,
+            "count": 92
+        },
+        "SideScroller.Losses.CuriosityForwardLoss.sum": {
+            "value": 1.2545227404779218e+18,
+            "min": 22.168828926559677,
+            "max": 1.2545227404779218e+18,
+            "count": 92
+        },
+        "SideScroller.Losses.CuriosityInverseLoss.mean": {
+            "value": 9.052215273918036e+25,
+            "min": 2.4327060201210373,
+            "max": 9.052215273918036e+25,
+            "count": 92
+        },
+        "SideScroller.Losses.CuriosityInverseLoss.sum": {
+            "value": 2.1725316657403284e+27,
+            "min": 46.22141438229971,
+            "max": 2.1725316657403284e+27,
+            "count": 92
+        },
+        "SideScroller.Policy.GAILPolicyEstimate.mean": {
+            "value": 0.05636981310137606,
+            "min": 0.005315886415880351,
+            "max": 0.3486883188451763,
+            "count": 92
+        },
+        "SideScroller.Policy.GAILPolicyEstimate.sum": {
+            "value": 1.3528755144330253,
+            "min": 0.12226538756524806,
+            "max": 7.19105743947277,
+            "count": 92
+        },
+        "SideScroller.Policy.GAILExpertEstimate.mean": {
+            "value": 0.9519433990772205,
+            "min": 0.6356168684280877,
+            "max": 0.9914848208173359,
+            "count": 92
+        },
+        "SideScroller.Policy.GAILExpertEstimate.sum": {
+            "value": 22.84664157785329,
+            "min": 12.486107116019749,
+            "max": 23.792938056164513,
+            "count": 92
+        },
+        "SideScroller.Losses.GAILLoss.mean": {
+            "value": 0.17125077795041757,
+            "min": 0.016558390135617013,
+            "max": 0.9553519986713935,
+            "count": 92
+        },
+        "SideScroller.Losses.GAILLoss.sum": {
+            "value": 4.110018670810022,
+            "min": 0.3808429731191913,
+            "max": 20.062391972099263,
+            "count": 92
+        },
+        "SideScroller.Policy.GAILGradMagLoss.mean": {
+            "value": 0.016037714952771617,
+            "min": 0.005929623048075863,
+            "max": 0.8977067901755853,
+            "count": 92
+        },
+        "SideScroller.Policy.GAILGradMagLoss.sum": {
+            "value": 0.38490515886651877,
+            "min": 0.13638133010574485,
+            "max": 17.05642901333612,
+            "count": 92
+>>>>>>> Stashed changes
         },
         "SideScroller.Losses.PretrainingLoss.mean": {
             "value": 0.0,
             "min": 0.0,
+<<<<<<< Updated upstream
             "max": 1.7442331483216493e+25,
             "count": 65
+=======
+            "max": 7669.329057399038,
+            "count": 92
+>>>>>>> Stashed changes
         },
         "SideScroller.Losses.PretrainingLoss.sum": {
             "value": 0.0,
             "min": 0.0,
+<<<<<<< Updated upstream
             "max": 1.5698098334894844e+26,
             "count": 65
         },
@@ -264,30 +475,97 @@
             "min": 137.07033807761036,
             "max": 627.0508653884754,
             "count": 65
+=======
+            "max": 161055.9102053798,
+            "count": 92
+        },
+        "SideScroller.Environment.CumulativeReward.mean": {
+            "value": 0.06459225462246347,
+            "min": -1.0277874997415466,
+            "max": 0.3143125871250119,
+            "count": 92
+        },
+        "SideScroller.Environment.CumulativeReward.sum": {
+            "value": 0.7751070554695616,
+            "min": -263.45228090137243,
+            "max": 4.086063632625155,
+            "count": 92
+        },
+        "SideScroller.Policy.ExtrinsicReward.mean": {
+            "value": 0.06459225462246347,
+            "min": -1.0277874997415466,
+            "max": 0.3143125871250119,
+            "count": 92
+        },
+        "SideScroller.Policy.ExtrinsicReward.sum": {
+            "value": 0.7751070554695616,
+            "min": -263.45228090137243,
+            "max": 4.086063632625155,
+            "count": 92
+        },
+        "SideScroller.Policy.CuriosityReward.mean": {
+            "value": 4000.0,
+            "min": 43.09944980036324,
+            "max": 4000.0,
+            "count": 92
+        },
+        "SideScroller.Policy.CuriosityReward.sum": {
+            "value": 48000.0,
+            "min": 560.2928474047221,
+            "max": 58855.0,
+            "count": 92
+        },
+        "SideScroller.Policy.GailReward.mean": {
+            "value": 37.422333472253136,
+            "min": 0.14711047210843314,
+            "max": 184.77100461836045,
+            "count": 92
+        },
+        "SideScroller.Policy.GailReward.sum": {
+            "value": 449.0680016670376,
+            "min": 33.099856224397456,
+            "max": 3054.0626810267568,
+            "count": 92
+>>>>>>> Stashed changes
         },
         "SideScroller.IsTraining.mean": {
             "value": 1.0,
             "min": 1.0,
             "max": 1.0,
+<<<<<<< Updated upstream
             "count": 65
+=======
+            "count": 92
+>>>>>>> Stashed changes
         },
         "SideScroller.IsTraining.sum": {
             "value": 1.0,
             "min": 1.0,
             "max": 1.0,
+<<<<<<< Updated upstream
             "count": 65
+=======
+            "count": 92
+>>>>>>> Stashed changes
         }
     },
     "metadata": {
         "timer_format_version": "0.1.0",
+<<<<<<< Updated upstream
         "start_time_seconds": "1648236631",
         "python_version": "3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]",
         "command_line_arguments": "C:\\Users\\harri\\python-envs\\sample-env\\Scripts\\mlagents-learn config\\imitation\\SideScroller.yaml --run-id=Test33B --env=Build\\Game.exe --time-scale=3 --no-graphics --resume",
+=======
+        "start_time_seconds": "1648223472",
+        "python_version": "3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\harri\\python-envs\\sample-env\\Scripts\\mlagents-learn config\\imitation\\SideScroller.yaml --run-id=Test33B --env=Build\\Game.exe --time-scale=3 --no-graphics",
+>>>>>>> Stashed changes
         "mlagents_version": "0.27.0",
         "mlagents_envs_version": "0.27.0",
         "communication_protocol_version": "1.5.0",
         "pytorch_version": "1.7.1+cu110",
         "numpy_version": "1.21.4",
+<<<<<<< Updated upstream
         "end_time_seconds": "1648243511"
     },
     "total": 6879.462807399999,
@@ -323,10 +601,48 @@
                                             "total": 0.004651699999998371,
                                             "count": 2,
                                             "self": 0.004651699999998371
+=======
+        "end_time_seconds": "1648235354"
+    },
+    "total": 11881.976162500001,
+    "count": 1,
+    "self": 0.1623565999998391,
+    "children": {
+        "run_training.setup": {
+            "total": 0.11139529999999986,
+            "count": 1,
+            "self": 0.11139529999999986
+        },
+        "TrainerController.start_learning": {
+            "total": 11881.7024106,
+            "count": 1,
+            "self": 23.128825499135928,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 28.6778895,
+                    "count": 1,
+                    "self": 5.763809500000001,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 22.91408,
+                            "count": 2,
+                            "self": 0.00036539999999973816,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 0.2870586000000017,
+                                    "count": 2,
+                                    "self": 0.2738232000000025,
+                                    "children": {
+                                        "read_file": {
+                                            "total": 0.013235399999999231,
+                                            "count": 2,
+                                            "self": 0.013235399999999231
+>>>>>>> Stashed changes
                                         }
                                     }
                                 },
                                 "make_demo_buffer": {
+<<<<<<< Updated upstream
                                     "total": 13.964177600000001,
                                     "count": 2,
                                     "self": 1.716838000000175,
@@ -340,6 +656,21 @@
                                                     "total": 5.625324399998663,
                                                     "count": 347808,
                                                     "self": 5.625324399998663
+=======
+                                    "total": 22.626655999999997,
+                                    "count": 2,
+                                    "self": 2.771798300000164,
+                                    "children": {
+                                        "steps_from_proto": {
+                                            "total": 19.854857699999833,
+                                            "count": 57968,
+                                            "self": 10.833563299999973,
+                                            "children": {
+                                                "_process_rank_one_or_two_observation": {
+                                                    "total": 9.02129439999986,
+                                                    "count": 347808,
+                                                    "self": 9.02129439999986
+>>>>>>> Stashed changes
                                                 }
                                             }
                                         }
@@ -350,6 +681,7 @@
                     }
                 },
                 "TrainerController.advance": {
+<<<<<<< Updated upstream
                     "total": 6847.321551099744,
                     "count": 650507,
                     "self": 7.13634999964961,
@@ -373,12 +705,38 @@
                                                     "total": 3367.999335999836,
                                                     "count": 650506,
                                                     "self": 3367.999335999836
+=======
+                    "total": 11829.742551900865,
+                    "count": 925554,
+                    "self": 11.213747500856698,
+                    "children": {
+                        "env_step": {
+                            "total": 11818.528804400008,
+                            "count": 925554,
+                            "self": 3701.7918412998824,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 8105.410970600078,
+                                    "count": 925554,
+                                    "self": 57.18750079922302,
+                                    "children": {
+                                        "TorchPolicy.evaluate": {
+                                            "total": 8048.223469800855,
+                                            "count": 925554,
+                                            "self": 2240.3368588010662,
+                                            "children": {
+                                                "TorchPolicy.sample_actions": {
+                                                    "total": 5807.886610999789,
+                                                    "count": 925554,
+                                                    "self": 5807.886610999789
+>>>>>>> Stashed changes
                                                 }
                                             }
                                         }
                                     }
                                 },
                                 "workers": {
+<<<<<<< Updated upstream
                                     "total": 7.212189800086598,
                                     "count": 650506,
                                     "self": 0.0,
@@ -400,10 +758,34 @@
                                                             "count": 6,
                                                             "is_parallel": true,
                                                             "self": 0.0002827000000000801
+=======
+                                    "total": 11.325992500047704,
+                                    "count": 925553,
+                                    "self": 0.0,
+                                    "children": {
+                                        "worker_root": {
+                                            "total": 11855.074178201163,
+                                            "count": 925553,
+                                            "is_parallel": true,
+                                            "self": 9468.736473101384,
+                                            "children": {
+                                                "steps_from_proto": {
+                                                    "total": 0.0065910000000002356,
+                                                    "count": 1,
+                                                    "is_parallel": true,
+                                                    "self": 0.000605600000000095,
+                                                    "children": {
+                                                        "_process_rank_one_or_two_observation": {
+                                                            "total": 0.005985400000000141,
+                                                            "count": 6,
+                                                            "is_parallel": true,
+                                                            "self": 0.005985400000000141
+>>>>>>> Stashed changes
                                                         }
                                                     }
                                                 },
                                                 "UnityEnvironment.step": {
+<<<<<<< Updated upstream
                                                     "total": 1514.1194292000432,
                                                     "count": 650506,
                                                     "is_parallel": true,
@@ -432,6 +814,36 @@
                                                                     "count": 3903036,
                                                                     "is_parallel": true,
                                                                     "self": 146.73502060043685
+=======
+                                                    "total": 2386.33111409978,
+                                                    "count": 925553,
+                                                    "is_parallel": true,
+                                                    "self": 109.4989989988153,
+                                                    "children": {
+                                                        "UnityEnvironment._generate_step_input": {
+                                                            "total": 107.40074019978366,
+                                                            "count": 925553,
+                                                            "is_parallel": true,
+                                                            "self": 107.40074019978366
+                                                        },
+                                                        "communicator.exchange": {
+                                                            "total": 1764.4511125005238,
+                                                            "count": 925553,
+                                                            "is_parallel": true,
+                                                            "self": 1764.4511125005238
+                                                        },
+                                                        "steps_from_proto": {
+                                                            "total": 404.9802624006572,
+                                                            "count": 925553,
+                                                            "is_parallel": true,
+                                                            "self": 176.4059217993918,
+                                                            "children": {
+                                                                "_process_rank_one_or_two_observation": {
+                                                                    "total": 228.5743406012654,
+                                                                    "count": 5553318,
+                                                                    "is_parallel": true,
+                                                                    "self": 228.5743406012654
+>>>>>>> Stashed changes
                                                                 }
                                                             }
                                                         }
@@ -446,9 +858,15 @@
                     }
                 },
                 "trainer_threads": {
+<<<<<<< Updated upstream
                     "total": 5.1500000154192094e-05,
                     "count": 1,
                     "self": 5.1500000154192094e-05,
+=======
+                    "total": 5.4299998737405986e-05,
+                    "count": 1,
+                    "self": 5.4299998737405986e-05,
+>>>>>>> Stashed changes
                     "children": {
                         "thread_root": {
                             "total": 0.0,
@@ -457,6 +875,7 @@
                             "self": 0.0,
                             "children": {
                                 "trainer_advance": {
+<<<<<<< Updated upstream
                                     "total": 6861.157994199919,
                                     "count": 96876,
                                     "is_parallel": true,
@@ -473,10 +892,29 @@
                                                     "count": 6,
                                                     "is_parallel": true,
                                                     "self": 0.9631951000001209
+=======
+                                    "total": 11850.445441200083,
+                                    "count": 148307,
+                                    "is_parallel": true,
+                                    "self": 8.980004700466452,
+                                    "children": {
+                                        "process_trajectory": {
+                                            "total": 2758.701258299665,
+                                            "count": 148307,
+                                            "is_parallel": true,
+                                            "self": 2757.229009099665,
+                                            "children": {
+                                                "RLTrainer._checkpoint": {
+                                                    "total": 1.4722492000000784,
+                                                    "count": 9,
+                                                    "is_parallel": true,
+                                                    "self": 1.4722492000000784
+>>>>>>> Stashed changes
                                                 }
                                             }
                                         },
                                         "_update_policy": {
+<<<<<<< Updated upstream
                                             "total": 5089.541079999975,
                                             "count": 1509,
                                             "is_parallel": true,
@@ -493,6 +931,24 @@
                                                     "count": 339,
                                                     "is_parallel": true,
                                                     "self": 1.5998696000000407
+=======
+                                            "total": 9082.764178199952,
+                                            "count": 2149,
+                                            "is_parallel": true,
+                                            "self": 1113.9262083000276,
+                                            "children": {
+                                                "TorchPPOOptimizer.update": {
+                                                    "total": 7869.6822041999285,
+                                                    "count": 106659,
+                                                    "is_parallel": true,
+                                                    "self": 7869.6822041999285
+                                                },
+                                                "TorchPolicy.sample_actions": {
+                                                    "total": 99.15576569999601,
+                                                    "count": 21018,
+                                                    "is_parallel": true,
+                                                    "self": 99.15576569999601
+>>>>>>> Stashed changes
                                                 }
                                             }
                                         }
@@ -503,6 +959,7 @@
                     }
                 },
                 "TrainerController._save_models": {
+<<<<<<< Updated upstream
                     "total": 0.1350704999995287,
                     "count": 1,
                     "self": 0.0019585000000006403,
@@ -511,6 +968,16 @@
                             "total": 0.13311199999952805,
                             "count": 1,
                             "self": 0.13311199999952805
+=======
+                    "total": 0.15308940000068105,
+                    "count": 1,
+                    "self": 0.0020027000009577023,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.15108669999972335,
+                            "count": 1,
+                            "self": 0.15108669999972335
+>>>>>>> Stashed changes
                         }
                     }
                 }

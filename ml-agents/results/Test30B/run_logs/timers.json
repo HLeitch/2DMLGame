@@ -1,0 +1,94 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1647979925",
+        "python_version": "3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\harri\\python-envs\\sample-env\\Scripts\\mlagents-learn config\\imitation\\SideScroller.yaml --env=Build\\Game.exe --run-id=Test30B --no-graphics --time-scale=3 --resume",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.4",
+        "end_time_seconds": "1647979928"
+    },
+    "total": 3.7259887,
+    "count": 1,
+    "self": 0.17004790000000058,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09167319999999979,
+            "count": 1,
+            "self": 0.09167319999999979
+        },
+        "TrainerController.start_learning": {
+            "total": 3.4642675999999994,
+            "count": 1,
+            "self": 0.025914099999999607,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 3.4352694999999995,
+                    "count": 1,
+                    "self": 2.4786178999999993,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 0.9566516000000003,
+                            "count": 1,
+                            "self": 3.300000000061587e-05,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 0.10575570000000001,
+                                    "count": 1,
+                                    "self": 0.0883001000000001,
+                                    "children": {
+                                        "read_file": {
+                                            "total": 0.017455599999999905,
+                                            "count": 1,
+                                            "self": 0.017455599999999905
+                                        }
+                                    }
+                                },
+                                "make_demo_buffer": {
+                                    "total": 0.8508628999999996,
+                                    "count": 1,
+                                    "self": 0.10730149999995842,
+                                    "children": {
+                                        "steps_from_proto": {
+                                            "total": 0.7435614000000412,
+                                            "count": 3576,
+                                            "self": 0.40181780000011935,
+                                            "children": {
+                                                "_process_rank_one_or_two_observation": {
+                                                    "total": 0.3417435999999219,
+                                                    "count": 21456,
+                                                    "self": 0.3417435999999219
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "trainer_threads": {
+                    "total": 2.9000000001389026e-06,
+                    "count": 1,
+                    "self": 2.9000000001389026e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 0.00308110000000017,
+                    "count": 1,
+                    "self": 0.0002741000000003879,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.002806999999999782,
+                            "count": 1,
+                            "self": 0.002806999999999782
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

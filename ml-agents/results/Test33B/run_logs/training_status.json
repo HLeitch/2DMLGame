@@ -2,6 +2,7 @@
     "SideScroller": {
         "checkpoints": [
             {
+<<<<<<< Updated upstream
                 "steps": 5999982,
                 "file_path": "results\\Test33B\\SideScroller\\SideScroller-5999982.onnx",
                 "reward": null,
@@ -44,16 +45,69 @@
                 "creation_time": 1648243511.0210516,
                 "auxillary_file_paths": [
                     "results\\Test33B\\SideScroller\\SideScroller-7878477.pt"
+=======
+                "steps": 2999932,
+                "file_path": "results\\Test33B\\SideScroller\\SideScroller-2999932.onnx",
+                "reward": null,
+                "creation_time": 1648231882.2759795,
+                "auxillary_file_paths": [
+                    "results\\Test33B\\SideScroller\\SideScroller-2999932.pt"
+                ]
+            },
+            {
+                "steps": 3499965,
+                "file_path": "results\\Test33B\\SideScroller\\SideScroller-3499965.onnx",
+                "reward": null,
+                "creation_time": 1648233039.259728,
+                "auxillary_file_paths": [
+                    "results\\Test33B\\SideScroller\\SideScroller-3499965.pt"
+                ]
+            },
+            {
+                "steps": 3999881,
+                "file_path": "results\\Test33B\\SideScroller\\SideScroller-3999881.onnx",
+                "reward": null,
+                "creation_time": 1648234064.0181253,
+                "auxillary_file_paths": [
+                    "results\\Test33B\\SideScroller\\SideScroller-3999881.pt"
+                ]
+            },
+            {
+                "steps": 4499904,
+                "file_path": "results\\Test33B\\SideScroller\\SideScroller-4499904.onnx",
+                "reward": 0.21040706601434067,
+                "creation_time": 1648235092.1473002,
+                "auxillary_file_paths": [
+                    "results\\Test33B\\SideScroller\\SideScroller-4499904.pt"
+                ]
+            },
+            {
+                "steps": 4627330,
+                "file_path": "results\\Test33B\\SideScroller\\SideScroller-4627330.onnx",
+                "reward": null,
+                "creation_time": 1648235354.2769449,
+                "auxillary_file_paths": [
+                    "results\\Test33B\\SideScroller\\SideScroller-4627330.pt"
+>>>>>>> Stashed changes
                 ]
             }
         ],
         "final_checkpoint": {
+<<<<<<< Updated upstream
             "steps": 7878477,
             "file_path": "results\\Test33B\\SideScroller.onnx",
             "reward": null,
             "creation_time": 1648243511.0210516,
             "auxillary_file_paths": [
                 "results\\Test33B\\SideScroller\\SideScroller-7878477.pt"
+=======
+            "steps": 4627330,
+            "file_path": "results\\Test33B\\SideScroller.onnx",
+            "reward": null,
+            "creation_time": 1648235354.2769449,
+            "auxillary_file_paths": [
+                "results\\Test33B\\SideScroller\\SideScroller-4627330.pt"
+>>>>>>> Stashed changes
             ]
         }
     },

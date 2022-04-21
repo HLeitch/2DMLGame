@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 8f;
     public float dashForce = 4f;
 
+    //bools to detect user input between requests
+    private bool jumpButtonPressed = false;
+    private bool dashButtonPressed = false;
+    private bool stompButtonPressed = false;
+
     public float jumpDelay = 0.1f;
     public bool canJump = true;
     
@@ -26,10 +31,24 @@ public class PlayerController : MonoBehaviour
         _mRB = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    // Inputs called in early update to reduce chance of missed inputs.
     void Update()
     {
         //PlayerInput();
+        if(Input.GetKeyUp("space")&&jumpButtonPressed==false)
+        {
+            jumpButtonPressed = true;
+            Debug.Log("jump input detected");
+        }    
+
+        if(Input.GetKeyUp("left shift")&&dashButtonPressed==false)
+        {
+            dashButtonPressed = true;
+        }
+        if(Input.GetKeyUp("s")&&stompButtonPressed == false)
+        {
+            stompButtonPressed = true;
+        }
     }
     private void FixedUpdate()
     {
@@ -87,17 +106,20 @@ public class PlayerController : MonoBehaviour
 
         continuousActions[0] = horizontal;
 
-        if (Input.GetKeyUp("space"))
+        if (jumpButtonPressed)
         {
             discreteActions[0] = 1;
+            jumpButtonPressed = false;
         }
-        if (Input.GetKeyUp("s"))
+        if (stompButtonPressed)
         {
             discreteActions[1] = 1;
+            stompButtonPressed = false;
         }
-        if (Input.GetKeyUp("left shift"))
+        if (dashButtonPressed)
         {
            discreteActions[2] = 1;
+            dashButtonPressed = false;
         }
 
     }

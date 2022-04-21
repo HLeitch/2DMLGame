@@ -90,7 +90,11 @@ checkpoint_settings:
   run_id: Test33B
   initialize_from: null
   load_model: false
+<<<<<<< Updated upstream
   resume: true
+=======
+  resume: false
+>>>>>>> Stashed changes
   force: false
   train_model: false
   inference: false

@@ -15,9 +15,9 @@ behaviors:
       hidden_units: 128
       num_layers: 2
       vis_encode_type: simple
-     ## memory:
-       ## sequence_length: 64
-       ## memory_size: 256
+      memory:
+        sequence_length: 64
+        memory_size: 256
     reward_signals:
       extrinsic:
         gamma: 0.99
@@ -31,10 +31,12 @@ behaviors:
         learning_rate: 0.0003
         use_actions: true
         use_vail: false
-        demo_path: Demos/SideScroller2_1.demo
+        demo_path: Demos/SideScrollerComp.demo
     keep_checkpoints: 5
     max_steps: 10000000
     time_horizon: 64
     summary_freq: 30000
 
       #Test 39 Reset All values. new values from Pyramids.yaml. More complex and uses raycasts
+
+      #test 43 Memory added back and new demo recorded. 

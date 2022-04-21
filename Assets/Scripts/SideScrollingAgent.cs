@@ -100,12 +100,18 @@ public class SideScrollingAgent : Agent
             //AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
             
             
+
             //AddReward(0.001f * (1 - normalisedDistanceToGoal()));
             
             if(Academy.Instance.StepCount%distanceRewardTimestepGap==0)
             {
                 _RewardDistanceTravelled();
             }
+
+            //AddReward(0.001f * (1 - normalisedDistanceToGoal()));
+            
+
+
 
             float movementControl = actions.ContinuousActions[0];
 
