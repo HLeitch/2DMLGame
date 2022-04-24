@@ -1,0 +1,65 @@
+{
+    "SideScroller": {
+        "checkpoints": [
+            {
+                "steps": 3999873,
+                "file_path": "results\\Test45RL\\SideScroller\\SideScroller-3999873.onnx",
+                "reward": 1.7119291760027409,
+                "creation_time": 1650659911.025554,
+                "auxillary_file_paths": [
+                    "results\\Test45RL\\SideScroller\\SideScroller-3999873.pt"
+                ]
+            },
+            {
+                "steps": 4499965,
+                "file_path": "results\\Test45RL\\SideScroller\\SideScroller-4499965.onnx",
+                "reward": 0.31596964597702026,
+                "creation_time": 1650661079.5742185,
+                "auxillary_file_paths": [
+                    "results\\Test45RL\\SideScroller\\SideScroller-4499965.pt"
+                ]
+            },
+            {
+                "steps": 4999702,
+                "file_path": "results\\Test45RL\\SideScroller\\SideScroller-4999702.onnx",
+                "reward": 1.7926333281211555,
+                "creation_time": 1650662366.9826794,
+                "auxillary_file_paths": [
+                    "results\\Test45RL\\SideScroller\\SideScroller-4999702.pt"
+                ]
+            },
+            {
+                "steps": 5499782,
+                "file_path": "results\\Test45RL\\SideScroller\\SideScroller-5499782.onnx",
+                "reward": null,
+                "creation_time": 1650663640.7621338,
+                "auxillary_file_paths": [
+                    "results\\Test45RL\\SideScroller\\SideScroller-5499782.pt"
+                ]
+            },
+            {
+                "steps": 5794899,
+                "file_path": "results\\Test45RL\\SideScroller\\SideScroller-5794899.onnx",
+                "reward": null,
+                "creation_time": 1650664361.451628,
+                "auxillary_file_paths": [
+                    "results\\Test45RL\\SideScroller\\SideScroller-5794899.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5794899,
+            "file_path": "results\\Test45RL\\SideScroller.onnx",
+            "reward": null,
+            "creation_time": 1650664361.451628,
+            "auxillary_file_paths": [
+                "results\\Test45RL\\SideScroller\\SideScroller-5794899.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
