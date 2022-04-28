@@ -1,0 +1,49 @@
+behaviors:
+  SideScroller:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 128
+      buffer_size: 1024
+      learning_rate: 0.0003
+      beta: 0.01
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 3
+      learning_rate_schedule: linear
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 2
+      vis_encode_type: simple
+      memory:
+        sequence_length: 64
+        memory_size: 256
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+      curiosity:
+        strength: 0.02
+        gamma: 0.99
+      gail:
+        gamma: 0.99
+        strength: 0.025
+        learning_rate: 0.0003
+        use_actions: true
+        use_vail: false
+        demo_path: Demos/SideScrollerCom2.demo
+    behavioral_cloning:
+      demo_path: Demos/SideScrollerCom2.demo
+      steps: 50000
+      strength: 1.0
+      samples_per_update: 0
+    keep_checkpoints: 5
+    max_steps: 10000000
+    time_horizon: 64
+    summary_freq: 30000
+    threaded: true
+
+      #Test 39 Reset All values. new values from Pyramids.yaml. More complex and uses raycasts
+
+      #test 43 Memory added back and new demo recorded. 
+      #Test 46 increase in gail strength to 0.08

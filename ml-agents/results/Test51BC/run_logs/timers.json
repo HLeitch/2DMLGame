@@ -1,0 +1,89 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1651150893",
+        "python_version": "3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\ProgramData\\Anaconda3\\Scripts\\mlagents-learn config/imitation/SideScroller2BC.yaml --run-id=Test51BC --env=Build/Game.exe --torch-device=cuda --time-scale=3 --force",
+        "mlagents_version": "0.29.0",
+        "mlagents_envs_version": "0.29.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.9.1",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1651150938"
+    },
+    "total": 44.727956299999995,
+    "count": 1,
+    "self": 1.2174851999999987,
+    "children": {
+        "run_training.setup": {
+            "total": 0.1518081,
+            "count": 1,
+            "self": 0.1518081
+        },
+        "TrainerController.start_learning": {
+            "total": 43.358663,
+            "count": 1,
+            "self": 5.8199999998009844e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 43.3537954,
+                    "count": 1,
+                    "self": 7.631466700000004,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 35.7223287,
+                            "count": 2,
+                            "self": 0.15982880000000677,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 16.508275199999996,
+                                    "count": 2,
+                                    "self": 16.500445699999997,
+                                    "children": {
+                                        "read_file": {
+                                            "total": 0.007829499999999712,
+                                            "count": 1,
+                                            "self": 0.007829499999999712
+                                        }
+                                    }
+                                },
+                                "make_demo_buffer": {
+                                    "total": 19.0542247,
+                                    "count": 1,
+                                    "self": 2.235810100000343,
+                                    "children": {
+                                        "steps_from_proto": {
+                                            "total": 16.818414599999656,
+                                            "count": 119428,
+                                            "self": 9.200863100001484,
+                                            "children": {
+                                                "_process_rank_one_or_two_observation": {
+                                                    "total": 7.6175514999981715,
+                                                    "count": 716568,
+                                                    "self": 7.6175514999981715
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.0048093999999991865,
+                    "count": 1,
+                    "self": 0.00013640000000236796,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.004672999999996819,
+                            "count": 1,
+                            "self": 0.004672999999996819
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
