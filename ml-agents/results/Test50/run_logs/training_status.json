@@ -2,33 +2,60 @@
     "SideScroller": {
         "checkpoints": [
             {
-                "steps": 499992,
-                "file_path": "results\\Test50\\SideScroller\\SideScroller-499992.onnx",
-                "reward": null,
-                "creation_time": 1651103561.2759268,
+                "steps": 5999967,
+                "file_path": "results\\Test50\\SideScroller\\SideScroller-5999967.onnx",
+                "reward": 2.6165377837605774,
+                "creation_time": 1651157173.2253897,
                 "auxillary_file_paths": [
-                    "results\\Test50\\SideScroller\\SideScroller-499992.pt"
+                    "results\\Test50\\SideScroller\\SideScroller-5999967.pt"
                 ]
             },
             {
-                "steps": 999943,
-                "file_path": "results\\Test50\\SideScroller\\SideScroller-999943.onnx",
-                "reward": 1.6568062715232372,
-                "creation_time": 1651105057.688836,
+                "steps": 6499953,
+                "file_path": "results\\Test50\\SideScroller\\SideScroller-6499953.onnx",
+                "reward": null,
+                "creation_time": 1651158313.2934656,
                 "auxillary_file_paths": [
-                    "results\\Test50\\SideScroller\\SideScroller-999943.pt"
+                    "results\\Test50\\SideScroller\\SideScroller-6499953.pt"
                 ]
             },
             {
-                "steps": 1191066,
-                "file_path": "results\\Test50\\SideScroller\\SideScroller-1191066.onnx",
+                "steps": 6999938,
+                "file_path": "results\\Test50\\SideScroller\\SideScroller-6999938.onnx",
                 "reward": null,
-                "creation_time": 1651105554.2087715,
+                "creation_time": 1651159501.5050037,
                 "auxillary_file_paths": [
-                    "results\\Test50\\SideScroller\\SideScroller-1191066.pt"
+                    "results\\Test50\\SideScroller\\SideScroller-6999938.pt"
+                ]
+            },
+            {
+                "steps": 7499962,
+                "file_path": "results\\Test50\\SideScroller\\SideScroller-7499962.onnx",
+                "reward": null,
+                "creation_time": 1651160641.8676982,
+                "auxillary_file_paths": [
+                    "results\\Test50\\SideScroller\\SideScroller-7499962.pt"
+                ]
+            },
+            {
+                "steps": 7891170,
+                "file_path": "results\\Test50\\SideScroller\\SideScroller-7891170.onnx",
+                "reward": null,
+                "creation_time": 1651161543.577283,
+                "auxillary_file_paths": [
+                    "results\\Test50\\SideScroller\\SideScroller-7891170.pt"
                 ]
             }
-        ]
+        ],
+        "final_checkpoint": {
+            "steps": 7891170,
+            "file_path": "results\\Test50\\SideScroller.onnx",
+            "reward": null,
+            "creation_time": 1651161543.577283,
+            "auxillary_file_paths": [
+                "results\\Test50\\SideScroller\\SideScroller-7891170.pt"
+            ]
+        }
     },
     "metadata": {
         "stats_format_version": "0.3.0",
