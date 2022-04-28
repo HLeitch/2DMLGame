@@ -27,16 +27,18 @@ behaviors:
         gamma: 0.99
       gail:
         gamma: 0.99
-        strength: 0.01
+        strength: 0.025
         learning_rate: 0.0003
         use_actions: true
         use_vail: false
-        demo_path: Demos/SideScrollerComp.demo
+        demo_path: Demos/SideScrollerCom2.demo
     keep_checkpoints: 5
     max_steps: 10000000
     time_horizon: 64
     summary_freq: 30000
+    threaded: true
 
       #Test 39 Reset All values. new values from Pyramids.yaml. More complex and uses raycasts
 
       #test 43 Memory added back and new demo recorded. 
+      #Test 46 increase in gail strength to 0.08

@@ -1,4 +1,4 @@
-behaviors:
+#behaviors:
   SideScroller:
     trainer_type: ppo
     time_horizon: 128
@@ -37,3 +37,5 @@ behaviors:
       ##Test20 3 epochs
       #Test28 gail strength 0.3, num epochs of BC and PPO = 5
       #Test 34 gail strenth 0.1 BC strength 0.3
+
+      #Test 39 Reset All values. Pyramids.yaml. More complex and uses raycasts
