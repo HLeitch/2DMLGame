@@ -458,7 +458,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 6000
   instanceBase: {fileID: 4276228814471500585}
   distanceRewardTimestepGap: 10
 --- !u!114 &4276228814190985098
@@ -487,9 +487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Record: 0
+  Record: 1
   NumStepsToRecord: 0
-  DemonstrationName: SideScroller_Comp
+  DemonstrationName: SideScroller_Com2
   DemonstrationDirectory: 
 --- !u!1 &4276228814411308603
 GameObject:
