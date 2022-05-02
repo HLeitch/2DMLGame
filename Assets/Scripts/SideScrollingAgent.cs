@@ -32,6 +32,7 @@ public class SideScrollingAgent : Agent
         playerController = GetComponent<PlayerController>();
         levelCreator = instanceBase.GetComponentInChildren<LevelCreator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
+        
     }
 
     float normalisedDistanceToGoal()
@@ -135,7 +136,6 @@ public class SideScrollingAgent : Agent
             {
                 playerController.Instruct_Dash();
             }
-
         }
         Vector2 controlSignal = Vector2.zero;
     }
@@ -152,7 +152,8 @@ public class SideScrollingAgent : Agent
         else
         {
             minDistanceReached = normalisedDistanceToGoal();
-            AddReward(0.01f * normalisedDistanceToGoal());
+            AddReward(0.01f * normalisedDistanceToGoal()*((MaxStep-StepCount))/MaxStep);
+            Debug.Log("distance reward = " + 0.01f * normalisedDistanceToGoal() * ((MaxStep - StepCount)) / MaxStep);
         }
                 
     }

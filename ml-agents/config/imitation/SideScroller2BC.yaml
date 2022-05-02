@@ -34,7 +34,7 @@ behaviors:
         demo_path: Demos/SideScrollerCom2.demo
     behavioral_cloning:
       demo_path: Demos/SideScrollerCom2.demo
-      steps: 50000
+      steps: 100000
       strength: 1.0
       samples_per_update: 0
     keep_checkpoints: 5
@@ -47,3 +47,5 @@ behaviors:
 
       #test 43 Memory added back and new demo recorded. 
       #Test 46 increase in gail strength to 0.08
+
+      #test 53 BC with longer episode length

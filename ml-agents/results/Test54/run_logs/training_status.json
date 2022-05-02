@@ -1,0 +1,29 @@
+{
+    "SideScroller": {
+        "checkpoints": [
+            {
+                "steps": 61581,
+                "file_path": "results\\Test54\\SideScroller\\SideScroller-61581.onnx",
+                "reward": null,
+                "creation_time": 1651451498.0520043,
+                "auxillary_file_paths": [
+                    "results\\Test54\\SideScroller\\SideScroller-61581.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 61581,
+            "file_path": "results\\Test54\\SideScroller.onnx",
+            "reward": null,
+            "creation_time": 1651451498.0520043,
+            "auxillary_file_paths": [
+                "results\\Test54\\SideScroller\\SideScroller-61581.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
