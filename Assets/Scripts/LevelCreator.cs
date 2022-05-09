@@ -63,6 +63,13 @@ public class LevelCreator : MonoBehaviour
         Debug.Log($"Number Of Jumps In each tile: {numberOfJumps}");
     }
 
+    //changes seed to a new value and generates a level from the seed inputted. 
+    public void GenerateLevel(int seedToGenerate)
+    {
+        seed = seedToGenerate;
+        GenerateLevel();
+    }
+
     //Convert Seed to an array
     private int[] SeedToArray()
     {
@@ -71,6 +78,10 @@ public class LevelCreator : MonoBehaviour
         string digits = seed.ToString();
 
         Debug.Log(digits);
+        while(digits.Length < 7)
+        {
+            digits += "0";
+        }
         //each character is added to the seedList
         foreach (char d in digits)
         {

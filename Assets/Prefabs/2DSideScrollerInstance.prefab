@@ -435,9 +435,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 077814b4555f6744e8982c8a7f69bb10, type: 3}
   m_InferenceDevice: 2
-  m_BehaviorType: 0
+  m_BehaviorType: 1
   m_BehaviorName: SideScroller
   TeamId: 0
   m_UseChildSensors: 1
@@ -461,6 +461,7 @@ MonoBehaviour:
   MaxStep: 6000
   instanceBase: {fileID: 4276228814471500585}
   distanceRewardTimestepGap: 10
+  levelSeriesSeed: 5721799
 --- !u!114 &4276228814190985098
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,6 +18,10 @@ public class SideScrollingAgent : Agent
     [SerializeField]
     private int distanceRewardTimestepGap = 50;
     private float minDistanceReached = 1.0f;
+
+
+    public int levelSeriesSeed = 0000000;
+    private int episodeNumber = 0;
     
     [Observable]
     JumpingState jumpingState { get { return playerController.jumpingState; } }
@@ -43,10 +47,23 @@ public class SideScrollingAgent : Agent
         return (posAlongPath / length);
     }
 
+    //This creates a random seed from a seed given. Allows episodes to have drastically different levels
+    int newLevelSeed(int randSeed)
+    {
+        UnityEngine.Random.InitState(randSeed);
+        float fVal = UnityEngine.Random.value;
+        int val =(int)( fVal * 10000000);
+        return val;
+
+    }
 
     public override void OnEpisodeBegin()
     {
-        levelCreator.GenerateLevel();
+        episodeNumber++;
+
+        int nextSeed = newLevelSeed(levelSeriesSeed + episodeNumber);
+        levelCreator.GenerateLevel(nextSeed);
+        //levelCreator.GenerateLevel();
 
         this.rigidbody2D.transform.localPosition = levelCreator.startFlag.transform.localPosition;
         this.rigidbody2D.velocity = Vector3.zero;
