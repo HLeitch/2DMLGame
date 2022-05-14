@@ -63,14 +63,14 @@ engine_settings:
   time_scale: 3.0
   target_frame_rate: -1
   capture_frame_rate: 60
-  no_graphics: false
+  no_graphics: true
 environment_parameters: null
 checkpoint_settings:
   run_id: Test56
   initialize_from: null
   load_model: false
-  resume: true
-  force: false
+  resume: false
+  force: true
   train_model: false
   inference: false
   results_dir: results

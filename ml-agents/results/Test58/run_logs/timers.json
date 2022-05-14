@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1652541902",
+        "python_version": "3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\harri\\python-envs\\sample-env\\Scripts\\mlagents-learn config/ppo/SideScroller.yaml --run-id=Test58 --env=Build2/GameLevelChanging.exe --torch-device=cuda --time-scale=3 --resume",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.4",
+        "end_time_seconds": "1652541904"
+    },
+    "total": 1.7704832000000001,
+    "count": 1,
+    "self": 0.0077686000000003474,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09685120000000003,
+            "count": 1,
+            "self": 0.09685120000000003
+        },
+        "TrainerController.start_learning": {
+            "total": 1.6658633999999999,
+            "count": 1,
+            "self": 0.000305600000000128,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 1.6655454,
+                    "count": 1,
+                    "self": 1.6655454
+                },
+                "trainer_threads": {
+                    "total": 3.899999999834591e-06,
+                    "count": 1,
+                    "self": 3.899999999834591e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 8.499999999855845e-06,
+                    "count": 1,
+                    "self": 8.499999999855845e-06
+                }
+            }
+        }
+    }
+}

@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
 
     public float jumpDelay = 0.1f;
     public bool canJump = true;
+
+    public int jumpCounter = 0;
     
     public JumpingState jumpingState = JumpingState.Grounded;
     
@@ -38,7 +40,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyUp("space")&&jumpButtonPressed==false)
         {
             jumpButtonPressed = true;
-            Debug.Log("jump input detected");
+            //Debug.Log("jump input detected");
         }    
 
         if(Input.GetKeyUp("left shift")&&dashButtonPressed==false)
@@ -196,7 +198,7 @@ public class PlayerController : MonoBehaviour
 
         _mRB.AddForce(Vector2.up * (jumpForce + extraForce), ForceMode2D.Impulse);
         jumpingState++;
-        Debug.Log("jumping state = " + jumpingState +" at frame "+Time.frameCount);
+        //Debug.Log("jumping state = " + jumpingState +" at frame "+Time.frameCount);
     }
 
     private void Movement_Dash()
@@ -208,7 +210,7 @@ public class PlayerController : MonoBehaviour
         if (xdir == 0) { xdir = 0; }
         _mRB.AddForce(new Vector2(xdir,0) * dashForce, ForceMode2D.Impulse);
 
-        Debug.Log("Jumping State = " + jumpingState);
+        //Debug.Log("Jumping State = " + jumpingState);
     }
 
     private void Movement_Stomp()
@@ -216,12 +218,13 @@ public class PlayerController : MonoBehaviour
         jumpingState = JumpingState.Stomping;
         _mRB.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse);
 
-       // Debug.Log("Jumping state = " + jumpingState);
+       // //Debug.Log("Jumping state = " + jumpingState);
     }
 
     public void Landed()
     {
         jumpingState = JumpingState.Grounded;
-        Debug.Log("Jumping state = Grounded at frame "+ Time.frameCount);
+        jumpCounter++;
+        //Debug.Log("Jumping state = Grounded at frame "+ Time.frameCount);
     }
 }

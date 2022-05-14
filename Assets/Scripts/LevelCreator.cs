@@ -25,6 +25,8 @@ public class LevelCreator : MonoBehaviour
     public GameObject startFlag;
     public GameObject endFlag;
 
+    //Stores the expected number of jump events in the level
+    public int numJumps = 1;
 
     //Please enter a 7 digit seed
     public int seed = 1234567;
@@ -45,7 +47,7 @@ public class LevelCreator : MonoBehaviour
         _seed = SeedToArray();
         levelManager = this.gameObject.GetComponent<LevelManager>();
         //tileManager = this.gameObject.GetComponent<TileManager>();
-        Debug.Log($"MY TILEMAP IS = {levelTilemap.gameObject.GetInstanceID()}");
+        //Debug.Log($"MY TILEMAP IS = {levelTilemap.gameObject.GetInstanceID()}");
         levelTilemap.ClearAllTiles();
 
         startFlag = levelManager.startFlag;
@@ -54,13 +56,16 @@ public class LevelCreator : MonoBehaviour
 
         ProduceLevel();
         PlaceStartAndEndFlag();
-        string numberOfJumps = "";
+        string numJumpString = "";
+        numJumps = 0;
         foreach (TileData t in tileDatas)
         {
-            numberOfJumps += $"{t.numberOfJumps}, ";
+            numJumpString += $"{t.numberOfJumps}, ";
+
+            numJumps += t.numberOfJumps;
         }
-        Debug.Log("Level Generated");
-        Debug.Log($"Number Of Jumps In each tile: {numberOfJumps}");
+        //Debug.Log("Level Generated");
+        //Debug.Log($"Number Of Jumps In each tile: {numJumpString}");
     }
 
     //changes seed to a new value and generates a level from the seed inputted. 
@@ -77,7 +82,7 @@ public class LevelCreator : MonoBehaviour
         List<int> seedList = new List<int>();
         string digits = seed.ToString();
 
-        Debug.Log(digits);
+        //Debug.Log(digits);
         while(digits.Length < 7)
         {
             digits += "0";
@@ -154,7 +159,7 @@ public class LevelCreator : MonoBehaviour
                 }
             }
         }
-        Debug.Log("TILES = " + string.Join(",", _tilesPlaced));
+        //Debug.Log("TILES = " + string.Join(",", _tilesPlaced));
 
     }
 

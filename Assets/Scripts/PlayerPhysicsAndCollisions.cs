@@ -25,7 +25,7 @@ public class PlayerPhysicsAndCollisions : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //if collided with ground. Find a better way of doing this
-        if(collision.gameObject.layer == 7)
+        if(collision.gameObject.layer == 7 && collision.otherCollider.gameObject == colliders.gameObject)
         {
             playerController.Landed();
         }

@@ -12,7 +12,8 @@ public class SideScrollingAgent : Agent
     public GameObject instanceBase;
     PlayerController playerController;
     LevelCreator levelCreator;
-    
+    StatsRecorder agentStats;
+
     Rigidbody2D rigidbody2D;
 
     [SerializeField]
@@ -22,7 +23,9 @@ public class SideScrollingAgent : Agent
 
     public int levelSeriesSeed = 0000000;
     private int episodeNumber = 0;
-    
+
+   
+
     [Observable]
     JumpingState jumpingState { get { return playerController.jumpingState; } }
 
@@ -33,6 +36,7 @@ public class SideScrollingAgent : Agent
         {
             Debug.LogError($"ATTACH A GAMEOBJECT TO INSTANCE BASE IN {this}");
         }
+        agentStats = Academy.Instance.StatsRecorder;
         playerController = GetComponent<PlayerController>();
         levelCreator = instanceBase.GetComponentInChildren<LevelCreator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -88,15 +92,21 @@ public class SideScrollingAgent : Agent
 
         if(normalisedDistanceToGoal() < 0.02f)
         {
+            agentStats.Add("Level Complete", 1);
+
+            //Only recorded on successful attempts as the whole level will have been completed
+            agentStats.Add("Jump Accuracy", playerController.jumpCounter / levelCreator.numJumps);
+            playerController.jumpCounter = 0;
             AddReward(1.0f);
             EndEpisode();
         }
-        //If agent has fallen off
-        if(this.transform.localPosition.y <-10)
+        //If agent has fallen off 
+        if (this.transform.localPosition.y < -10)
         {
             //Large negative reward for falling behind the start position
             if (normalisedDistanceToGoal() > 1)
             {
+                agentStats.Add("Level Complete", 0);
                 AddReward(-1.0f);
                 EndEpisode();
             }
@@ -106,6 +116,13 @@ public class SideScrollingAgent : Agent
                 AddReward(-0.2f);
                 EndEpisode();
             }
+
+            //If the agent is about to call the final step, record the episode as not completed
+            if (StepCount == MaxStep - 1)
+            {
+                agentStats.Add("Level Complete", 0);
+            }
+
 
         }
 
@@ -170,7 +187,7 @@ public class SideScrollingAgent : Agent
         {
             minDistanceReached = normalisedDistanceToGoal();
             AddReward(0.01f * normalisedDistanceToGoal()*((MaxStep-StepCount))/MaxStep);
-            Debug.Log("distance reward = " + 0.01f * normalisedDistanceToGoal() * ((MaxStep - StepCount)) / MaxStep);
+            //Debug.Log("distance reward = " + 0.01f * normalisedDistanceToGoal() * ((MaxStep - StepCount)) / MaxStep);
         }
                 
     }

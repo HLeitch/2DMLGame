@@ -60,3 +60,7 @@ crashlytics-build.properties
 
 
 *.log
+
+ml-agents/MonoBleedingEdge/
+
+ml-agents/Build2/

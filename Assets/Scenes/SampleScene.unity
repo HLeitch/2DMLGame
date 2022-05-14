@@ -474,13 +474,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 936245326, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: Record
+    - target: {fileID: 1601028262, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5385246
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601028262, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.23073769
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276228814190985100, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_CompositePaths.m_Paths.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276228814190985102, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_BehaviorType
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4276228814190985089, guid: c0210be5528597543840bb86a36264b6, type: 3}
-      propertyPath: levelSeriesSeed
-      value: 5721799
+    - target: {fileID: 4276228814411308600, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4276228814471500566, guid: c0210be5528597543840bb86a36264b6, type: 3}
       propertyPath: m_RootOrder
@@ -530,5 +546,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2DSideScrollerInstance
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4341863743938877747, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.51924515
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341863743938877747, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.24037743
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466899238323026681, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5467911
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466899238323026681, guid: c0210be5528597543840bb86a36264b6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.22660446
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1601028261, guid: c0210be5528597543840bb86a36264b6, type: 3}
+    - {fileID: 4341863743938877747, guid: c0210be5528597543840bb86a36264b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c0210be5528597543840bb86a36264b6, type: 3}
