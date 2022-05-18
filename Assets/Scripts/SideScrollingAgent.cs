@@ -118,9 +118,12 @@ public class SideScrollingAgent : Agent
             }
 
             //If the agent is about to call the final step, record the episode as not completed
+            //and end the episode with a major negative reward. 
             if (StepCount == MaxStep - 1)
             {
                 agentStats.Add("Level Complete", 0);
+                AddReward(-1.0f);
+                EndEpisode();
             }
 
 

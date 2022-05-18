@@ -2,31 +2,58 @@
     "SideScroller": {
         "checkpoints": [
             {
-                "steps": 34016,
-                "file_path": "results\\Test62\\SideScroller\\SideScroller-34016.onnx",
+                "steps": 5999940,
+                "file_path": "results\\Test62\\SideScroller\\SideScroller-5999940.onnx",
                 "reward": null,
-                "creation_time": 1652876585.602032,
+                "creation_time": 1652892435.9549625,
                 "auxillary_file_paths": [
-                    "results\\Test62\\SideScroller\\SideScroller-34016.pt"
+                    "results\\Test62\\SideScroller\\SideScroller-5999940.pt"
                 ]
             },
             {
-                "steps": 43786,
-                "file_path": "results\\Test62\\SideScroller\\SideScroller-43786.onnx",
+                "steps": 6499981,
+                "file_path": "results\\Test62\\SideScroller\\SideScroller-6499981.onnx",
                 "reward": null,
-                "creation_time": 1652877031.2804053,
+                "creation_time": 1652893386.3756227,
                 "auxillary_file_paths": [
-                    "results\\Test62\\SideScroller\\SideScroller-43786.pt"
+                    "results\\Test62\\SideScroller\\SideScroller-6499981.pt"
+                ]
+            },
+            {
+                "steps": 6999944,
+                "file_path": "results\\Test62\\SideScroller\\SideScroller-6999944.onnx",
+                "reward": null,
+                "creation_time": 1652894315.5097978,
+                "auxillary_file_paths": [
+                    "results\\Test62\\SideScroller\\SideScroller-6999944.pt"
+                ]
+            },
+            {
+                "steps": 7499997,
+                "file_path": "results\\Test62\\SideScroller\\SideScroller-7499997.onnx",
+                "reward": null,
+                "creation_time": 1652895251.3176146,
+                "auxillary_file_paths": [
+                    "results\\Test62\\SideScroller\\SideScroller-7499997.pt"
+                ]
+            },
+            {
+                "steps": 7930391,
+                "file_path": "results\\Test62\\SideScroller\\SideScroller-7930391.onnx",
+                "reward": null,
+                "creation_time": 1652896065.7787187,
+                "auxillary_file_paths": [
+                    "results\\Test62\\SideScroller\\SideScroller-7930391.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 43786,
+            "steps": 7930391,
             "file_path": "results\\Test62\\SideScroller.onnx",
             "reward": null,
-            "creation_time": 1652877031.2804053,
+            "creation_time": 1652896065.7787187,
             "auxillary_file_paths": [
-                "results\\Test62\\SideScroller\\SideScroller-43786.pt"
+                "results\\Test62\\SideScroller\\SideScroller-7930391.pt"
             ]
         }
     },
