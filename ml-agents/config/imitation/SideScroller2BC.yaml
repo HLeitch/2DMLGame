@@ -31,9 +31,9 @@ behaviors:
         learning_rate: 0.0003
         use_actions: true
         use_vail: false
-        demo_path: Demos/SideScrollerCom2.demo
+        demo_path: Demos/SideScrollerChng.demo
     behavioral_cloning:
-      demo_path: Demos/SideScrollerCom2.demo
+      demo_path: Demos/SideScrollerChng.demo
       steps: 100000
       strength: 1.0
       samples_per_update: 0

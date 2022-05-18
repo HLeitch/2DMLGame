@@ -2,49 +2,58 @@
     "SideScroller": {
         "checkpoints": [
             {
-                "steps": 499918,
-                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-499918.onnx",
-                "reward": 0.19508150545880198,
-                "creation_time": 1652543536.6661923,
-                "auxillary_file_paths": [
-                    "results\\Test59RL\\SideScroller\\SideScroller-499918.pt"
-                ]
-            },
-            {
-                "steps": 999990,
-                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-999990.onnx",
-                "reward": 0.3375773588195443,
-                "creation_time": 1652544595.3108974,
-                "auxillary_file_paths": [
-                    "results\\Test59RL\\SideScroller\\SideScroller-999990.pt"
-                ]
-            },
-            {
-                "steps": 1499726,
-                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-1499726.onnx",
+                "steps": 3499838,
+                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-3499838.onnx",
                 "reward": null,
-                "creation_time": 1652545667.8825846,
+                "creation_time": 1652564059.828632,
                 "auxillary_file_paths": [
-                    "results\\Test59RL\\SideScroller\\SideScroller-1499726.pt"
+                    "results\\Test59RL\\SideScroller\\SideScroller-3499838.pt"
                 ]
             },
             {
-                "steps": 1512326,
-                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-1512326.onnx",
-                "reward": 0.4226568341255188,
-                "creation_time": 1652545702.5460503,
+                "steps": 3999905,
+                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-3999905.onnx",
+                "reward": 0.10860573244281113,
+                "creation_time": 1652565248.7348907,
                 "auxillary_file_paths": [
-                    "results\\Test59RL\\SideScroller\\SideScroller-1512326.pt"
+                    "results\\Test59RL\\SideScroller\\SideScroller-3999905.pt"
+                ]
+            },
+            {
+                "steps": 4499912,
+                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-4499912.onnx",
+                "reward": null,
+                "creation_time": 1652566439.7700324,
+                "auxillary_file_paths": [
+                    "results\\Test59RL\\SideScroller\\SideScroller-4499912.pt"
+                ]
+            },
+            {
+                "steps": 4999781,
+                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-4999781.onnx",
+                "reward": null,
+                "creation_time": 1652567628.493459,
+                "auxillary_file_paths": [
+                    "results\\Test59RL\\SideScroller\\SideScroller-4999781.pt"
+                ]
+            },
+            {
+                "steps": 5093741,
+                "file_path": "results\\Test59RL\\SideScroller\\SideScroller-5093741.onnx",
+                "reward": null,
+                "creation_time": 1652567852.5905104,
+                "auxillary_file_paths": [
+                    "results\\Test59RL\\SideScroller\\SideScroller-5093741.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 1512326,
+            "steps": 5093741,
             "file_path": "results\\Test59RL\\SideScroller.onnx",
-            "reward": 0.4226568341255188,
-            "creation_time": 1652545702.5460503,
+            "reward": null,
+            "creation_time": 1652567852.5905104,
             "auxillary_file_paths": [
-                "results\\Test59RL\\SideScroller\\SideScroller-1512326.pt"
+                "results\\Test59RL\\SideScroller\\SideScroller-5093741.pt"
             ]
         }
     },
