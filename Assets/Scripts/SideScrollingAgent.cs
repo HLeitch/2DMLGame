@@ -67,7 +67,6 @@ public class SideScrollingAgent : Agent
 
         int nextSeed = newLevelSeed(levelSeriesSeed + episodeNumber);
         levelCreator.GenerateLevel(nextSeed);
-        //levelCreator.GenerateLevel();
 
         this.rigidbody2D.transform.localPosition = levelCreator.startFlag.transform.localPosition;
         this.rigidbody2D.velocity = Vector3.zero;

@@ -11,9 +11,9 @@ public class TileManager : MonoBehaviour
 
     Dictionary<List<List<Tile>>, JumpingState> TilelistToJumpState = new Dictionary<List<List<Tile>>, JumpingState>();
 
-    public List<Tile> stepDownTiles;
-    public Tile flatTile;
 
+    public Tile flatTile;
+    public List<Tile> stepDownTiles;
     public List<Tile> stepUpTiles;
 
     [Header("Place Tiles Here. Sort by Jump type and number of Jumping 'events'")]
