@@ -135,45 +135,46 @@ public class SideScrollingAgent : Agent
             //AddReward(-0.01f * Time.deltaTime);
 
             //AddReward(0.01f * Time.deltaTime * (1 - normalisedDistanceToGoal()));
-            
-            
 
             //AddReward(0.001f * (1 - normalisedDistanceToGoal()));
-            
-            if(Academy.Instance.StepCount%distanceRewardTimestepGap==0)
+
+            if (Academy.Instance.StepCount % distanceRewardTimestepGap == 0)
             {
                 _RewardDistanceTravelled();
             }
 
             //AddReward(0.001f * (1 - normalisedDistanceToGoal()));
-            
 
 
-
-            float movementControl = actions.ContinuousActions[0];
-
-            float jumpControl = actions.DiscreteActions[0];
-
-            float StompControl = actions.DiscreteActions[1];
-
-            float dashControl = actions.DiscreteActions[2];
-
-            playerController.aiCallMovement(movementControl,0);
-
-            if (jumpControl > 0.9f)
-            {
-                playerController.Instruct_Jump();
-            }
-            if (StompControl > 0.9f)
-            {
-                playerController.Instruct_Stomp();
-            }
-            if(dashControl > 0.9f)
-            {
-                playerController.Instruct_Dash();
-            }
+            Move_From_Actions(actions);
         }
         Vector2 controlSignal = Vector2.zero;
+    }
+
+    private void Move_From_Actions(ActionBuffers actions)
+    {
+        float movementControl = actions.ContinuousActions[0];
+
+        float jumpControl = actions.DiscreteActions[0];
+
+        float StompControl = actions.DiscreteActions[1];
+
+        float dashControl = actions.DiscreteActions[2];
+
+        playerController.aiCallMovement(movementControl, 0);
+
+        if (jumpControl > 0.9f)
+        {
+            playerController.Instruct_Jump();
+        }
+        if (StompControl > 0.9f)
+        {
+            playerController.Instruct_Stomp();
+        }
+        if (dashControl > 0.9f)
+        {
+            playerController.Instruct_Dash();
+        }
     }
 
     private void _RewardDistanceTravelled()
